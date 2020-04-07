@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Lato";
+  /* Имя шрифта */
+  src: url(fonts/Lato/Lato-Bold.ttf);
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  /* Имя шрифта */
+  src: url(fonts/playfair/PlayfairDisplay-Regular.ttf);
+  /* Путь к файлу со шрифтом */ }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; }
+  @media screen and (max-width: 768px) {
+    .header {
+      overflow: hidden;
+      width: 750px; } }
+  .header__background {
+    margin-top: -510px;
+    opacity: .2; }
+    @media screen and (max-width: 768px) {
+      .header__background {
+        margin-left: -270px;
+        margin-top: -460px;
+        width: 1350px; } }
+  .header__content {
+    width: 1200px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1667px;
+    position: relative;
+    z-index: 2; }
+    @media screen and (max-width: 768px) {
+      .header__content {
+        width: 768px;
+        margin-left: -1px; } }
+    .header__content-mobmenu {
+      margin-top: -600px;
+      width: 100px; }
+      @media screen and (max-width: 768px) {
+        .header__content-mobmenu {
+          margin-top: 50px;
+          position: relative;
+          z-index: 2; }
+          .header__content-mobmenu-link {
+            margin-left: 20px;
+            display: inline; }
+            .header__content-mobmenu-link svg {
+              width: 60px;
+              margin: 0; }
+              .header__content-mobmenu-link svg:hover {
+                cursor: pointer; } }
+    .header__content-menu-ul {
+      margin-top: 30px;
+      margin-left: 5px; }
+      .header__content-menu-ul-link {
+        text-decoration: none; }
+        .header__content-menu-ul-link:hover {
+          padding-bottom: 3px;
+          border-bottom: 1px solid black;
+          cursor: pointer;
+          -webkit-transition: 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.08);
+          -o-transition: 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.08);
+          transition: 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.08); }
+        .header__content-menu-ul-link-li {
+          list-style: none;
+          display: inline;
+          margin-left: 10px;
+          margin-right: 10px;
+          font-family: "Lato";
+          font-size: 20px;
+          font-weight: bold;
+          color: black; }
+    .header__content-link {
+      width: 100px;
+      margin-left: 560px; }
+      .header__content-link-logo {
+        width: 80px;
+        margin-top: 455px; }
+        @media screen and (max-width: 768px) {
+          .header__content-link-logo {
+            width: 80px;
+            margin-top: -130px;
+            margin-left: 335px; } }
+      @media screen and (max-width: 768px) {
+        .header__content-link {
+          left: -560px;
+          position: absolute;
+          z-index: 3;
+          top: 150px; } }
+    .header__content-network {
+      margin-top: -50px;
+      margin-left: 1040px; }
+      @media screen and (max-width: 768px) {
+        .header__content-network {
+          position: absolute;
+          left: -370px;
+          display: -ms-grid;
+          display: grid;
+          margin-top: -90px; } }
+      .header__content-network-link-icon {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 20px; }
+        @media screen and (max-width: 768px) {
+          .header__content-network-link-icon {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            width: 30px; } }
+        .header__content-network-link-icon:hover {
+          cursor: pointer; }
+        .header__content-network-link-icon:last-child {
+          margin-right: 0; }
+    .header__content-h1 {
+      width: 100%;
+      font-size: 120px;
+      font-family: "PlayfairDisplay";
+      font-weight: bold;
+      text-align: center;
+      margin-top: 180px;
+      color: black; }
+      @media screen and (max-width: 768px) {
+        .header__content-h1 {
+          font-size: 120px;
+          margin-top: 220px;
+          text-align: center; } }
+    .header__content-h3 {
+      font-size: 28px;
+      font-family: "Lato";
+      color: #6c6a68;
+      text-align: center;
+      margin-top: 20px;
+      color: black; }
+    .header__content-button {
+      font-size: 18px;
+      font-family: "Lato";
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 220px;
+      height: 52px;
+      border: 2px solid black;
+      margin-left: 490px;
+      margin-top: 170px; }
+      @media screen and (max-width: 768px) {
+        .header__content-button {
+          margin-left: 280px; } }
+      .header__content-button:hover {
+        -webkit-box-shadow: 0 0 10px gray;
+        box-shadow: 0 0 10px gray;
+        cursor: pointer;
+        outline: none; }
