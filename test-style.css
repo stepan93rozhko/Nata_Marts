@@ -198,7 +198,8 @@
     @media (max-width: 543px) {
       .footer__container .form-control {
         margin-left: auto;
-        margin-right: auto; } }
+        margin-right: auto;
+        width: 300px; } }
   .footer__container-title {
     width: 700px;
     font-size: 52px;
@@ -223,9 +224,6 @@
     margin-right: auto;
     width: 369px;
     height: 290px; }
-    @media (max-width: 543px) {
-      .footer__container-row-form {
-        width: 300px; } }
     .footer__container-row-form-button {
       font-family: "Lato";
       text-transform: uppercase;
