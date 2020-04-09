@@ -173,3 +173,74 @@
           margin-right: auto;
           width: 220px;
           margin-top: 70px; } }
+
+.footer {
+  height: 775px;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; }
+  @media (max-width: 543px) {
+    .footer {
+      width: 100%;
+      height: 600px; } }
+  @media (max-width: 543px) {
+    .footer__container {
+      width: 543px; } }
+  .footer__container .form-control {
+    margin-left: -15px;
+    background: none;
+    width: 380px;
+    height: 55px;
+    border: 1px solid black; }
+    @media (max-width: 543px) {
+      .footer__container .form-control {
+        margin-left: auto;
+        margin-right: auto; } }
+  .footer__container-title {
+    width: 700px;
+    font-size: 52px;
+    font-family: "PlayfairDisplay";
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    color: black;
+    font-weight: bold; }
+    @media (max-width: 543px) {
+      .footer__container-title {
+        width: 400px;
+        font-size: 30px;
+        margin-top: 20px; } }
+  @media (max-width: 543px) {
+    .footer__container-row {
+      margin-left: 15px; } }
+  .footer__container-row-form {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 369px;
+    height: 290px; }
+    @media (max-width: 543px) {
+      .footer__container-row-form {
+        width: 300px; } }
+    .footer__container-row-form-button {
+      font-family: "Lato";
+      text-transform: uppercase;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 220px;
+      height: 52px;
+      outline: none;
+      margin-top: 10px; }
+  .footer__container-menuBotom {
+    margin-top: 120px; }
+    .footer__container-menuBotom-networks {
+      margin-left: auto;
+      margin-right: auto; }
+      @media (max-width: 543px) {
+        .footer__container-menuBotom-networks {
+          margin-top: -20px; } }

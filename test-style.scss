@@ -1,9 +1,12 @@
 
+$fontsMenu: "Lato";
+$fonts-h: "PlayfairDisplay";
+$fontsButtonAndText: "Lato";
 
 $colorTextBlack: black;
-
-
-
+$colorBlackBorder: black;
+$colorHeaderTextH3: rgb( 108, 106, 104 );
+$colorBoxShadow: rgba(189, 191, 192, 0.4);
 @font-face {
     font-family: "Lato"; /* Имя шрифта */
     src: url(fonts/Lato/Lato-Bold.ttf); /* Путь к файлу со шрифтом */
@@ -46,25 +49,20 @@ $colorTextBlack: black;
                 float: right;
             }
             &-block{
-               
                 & button::after{
                     display: none;
                 }
                 & button.btn:focus{
-                    box-shadow: 0 0 0 0.2rem rgba(189, 191, 192, 0.4);
+                    box-shadow: 0 0 0 0.2rem $colorBoxShadow;
                 }
                 & button{
                     display: none;
                     @media (max-width: 543px) {
-                        
                         margin-top: -80px;
                         display: inline;
                         display: grid;
                         border: none;
                         cursor: pointer;
-                        & img{
-                            
-                        }
                     }
                 }
             }
@@ -86,7 +84,7 @@ $colorTextBlack: black;
                     display: none;
                 }
                 & button.btn:focus{
-                    box-shadow: 0 0 0 0.2rem rgba(189, 191, 192, 0.4);
+                    box-shadow: 0 0 0 0.2rem $colorBoxShadow;
                 }
                 & button{
                     display: none;
@@ -116,9 +114,8 @@ $colorTextBlack: black;
                     outline: none;
                     margin-top: 10px;
                     &:hover{
-                        box-shadow: 0 0 0 0.2rem rgba(189, 191, 192, 0.4);
+                        box-shadow: 0 0 0 0.2rem $colorBoxShadow;
                     }
-                    
                     & img{
                         margin-left: -18px;
                         margin-top: -12px;
@@ -131,24 +128,22 @@ $colorTextBlack: black;
             @media (max-width: 543px) {
                 width: 100%
             }
-        
             &-nav{
                 padding-top: 25px;
                 margin-left: -30px;
-                
                 &-item{
                     @media (max-width: 543px){
                         display: none;
                     }
                     &-link{
-                        font-family: "Lato";
+                        font-family: $fontsMenu;
                         font-size: 18px;
                         font-weight: bold;
                         color: $colorTextBlack;
                         &:hover{
                             color: $colorTextBlack;
                             padding-bottom: 1px;
-                            border-bottom: 1px solid black;
+                            border-bottom: 1px solid $colorBlackBorder;
                             cursor: pointer;
                             transition: .7s cubic-bezier(0.18, 0.89, 0.32, 1.08);
                         }
@@ -162,7 +157,6 @@ $colorTextBlack: black;
                     margin-right: auto;
                     width: 80px;
                     margin-top: -10px;
-                    
                 }
             }
             &-networks{
@@ -173,7 +167,6 @@ $colorTextBlack: black;
                     & img{
                         margin-top: 30px;
                         margin-left: 10px;
-                         
                     }
                 }
             }
@@ -181,7 +174,7 @@ $colorTextBlack: black;
         &-title{
             &-h1{
                 font-size: 120px;
-                font-family: "PlayfairDisplay";
+                font-family: $fonts-h;
                 font-weight: bold;
                 margin-top: 90px;
                 color: $colorTextBlack;
@@ -190,15 +183,13 @@ $colorTextBlack: black;
                     text-align: center;
                     margin-top: 200px;
                 } 
-
             }
-            
         }
         &-text{
             &-h3{
                 font-size: 28px;
-                font-family: "Lato";
-                color: rgb( 108, 106, 104 );
+                font-family: $fontsButtonAndText;
+                color: $colorHeaderTextH3;
                 margin-top: 20px;
                 color: $colorTextBlack;
                 @media (max-width: 543px) { 
@@ -210,7 +201,7 @@ $colorTextBlack: black;
         &-button{
             &-but{
                 font-size: 18px;
-                font-family: "Lato";
+                font-family: $fontsButtonAndText;
                 font-weight: bold;
                 text-transform: uppercase;
                 text-align: center;
@@ -227,6 +218,88 @@ $colorTextBlack: black;
                     width: 220px;
                     margin-top: 70px;
                 }
+            }
+        }
+    }
+}
+
+.footer{
+    height: 775px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    @media (max-width: 543px) { 
+        width: 100%;
+        height: 600px;
+    }
+    &__container{
+        @media (max-width: 543px) {
+            width: 543px;
+        }
+        & .form-control{
+            margin-left: -15px;
+            background: none;
+            width: 380px;
+            height: 55px;
+            border: 1px solid $colorBlackBorder;
+            @media (max-width: 543px) {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        &-title{
+            width: 700px;
+            font-size: 52px;
+            font-family: $fonts-h;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            color: $colorTextBlack;
+            font-weight: bold;
+            @media (max-width: 543px) { 
+                width: 400px;
+                font-size: 30px;
+                margin-top: 20px;
+            }
+        }
+        &-row{
+            @media (max-width: 543px) {
+                margin-left: 15px;
+            }
+            &-form{
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 369px;
+                height: 290px;
+                @media (max-width: 543px) {
+                    width: 300px;
+                }
+                &-button{
+                    font-family: $fontsButtonAndText;
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 220px;
+                    height: 52px;
+                    outline: none;
+                    margin-top: 10px;
+                }
+            }
+        }
+        &-menuBotom{
+            margin-top: 120px;
+            &-networks{
+               margin-left: auto;
+               margin-right: auto; 
+               @media (max-width: 543px) {
+                   margin-top: -20px;
+               }
             }
         }
     }
