@@ -248,6 +248,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             @media (max-width: 543px) {
                 margin-left: auto;
                 margin-right: auto;
+                width: 300px;
             }
         }
         &-title{
@@ -276,9 +277,6 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 margin-right: auto;
                 width: 369px;
                 height: 290px;
-                @media (max-width: 543px) {
-                    width: 300px;
-                }
                 &-button{
                     font-family: $fontsButtonAndText;
                     text-transform: uppercase;
