@@ -2,56 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="test-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" >
+    <title>Nata Marts</title>
 </head>
 <body>
 
-   <header class="header">
-        <img class="header__background" src="img/header/background_header.png" alt="">
+    <header class="header">
+        <img class="header__backgroundImg" src="img/header/background_header.png" alt="">
+        <div class="container header__container">
+           
+            <div class="row  header__container-row">
+                <ul class="nav col-xl-4  header__container-row-nav">
 
-        <div class="header__content">
-                
-                <div class="header__content-menu">
-                    <ul class="header__content-menu-ul">
-                        <a class="header__content-menu-ul-link" href="#"><li class="header__content-menu-ul-link-li">Home</li></a>
-                        <a class="header__content-menu-ul-link" href="#"><li class="header__content-menu-ul-link-li">Gallery</li></a>
-                        <a class="header__content-menu-ul-link" href="#"><li class="header__content-menu-ul-link-li">Contact</li></a> 
-                    </ul>   
+                    <li class="nav-item header__container-row-nav-item">
+                    <a class="nav-link active header__container-row-nav-item-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown header__container-row-nav-item">
+                        <a class="nav-link dropdown-toggle header__container-row-nav-item-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Весільна зйомка</a>
+                        <a class="dropdown-item" href="#">Сімейна зйомка</a>
+                        <a class="dropdown-item" href="#">Лов сторі</a>
+                        <a class="dropdown-item" href="#">Фотосесія від Наточки</a>
+                        
+                    </li>
+
+                    <li class="nav-item header__container-row-nav-item">
+                    <a class="nav-link header__container-row-nav-item-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+            
+            
+                <div class="col-xl-4 col-sm-12 text-center  header__container-row-logo">
+                    <img  src="img/logo/camera.svg" width="80px;" alt="">
                 </div>
 
-                <div class="header__content-mobmenu">
-                    <a class="header__content-mobmenu-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100px" height="100px"><path fill="#eeeeee" 
-                        d="M64 14A50 50 0 1 0 64 114A50 50 0 1 0 64 14Z"/><path fill="#000000" d="M64,117c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,
-                        53S93.2,117,64,117z M64,17c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S89.9,17,64,17z"/>
-                        <path fill="#000000" d="M86.5 52h-45c-1.7 0-3-1.3-3-3s1.3-3 3-3h45c1.7 0 3 1.3 3 3S88.2 52 86.5 52zM86.5 
-                        67h-45c-1.7 0-3-1.3-3-3s1.3-3 3-3h45c1.7 0 3 1.3 3 3S88.2 67 86.5 67z"/><g><path fill="#000000" d="M86.5,82h-45c-1.7,
-                            0-3-1.3-3-3s1.3-3,3-3h45c1.7,0,3,1.3,3,3S88.2,82,86.5,82z"/></g></svg></a>
+                <div class="col-xl-4 text-right header__container-row-networks">
+                    <a class="header__container-row-networks-link" href="#"><img src="img/header/instagram.svg" width="30px;" alt="instagram"></a>
+                    <a class="header__container-row-networks-link" href="#"><img src="img/header/facebook.svg" width="30px;" alt="facebook"></a>
+                    <a class="header__container-row-networks-link" href="#"><img src="img/header/whatsapp.svg" width="30px;" alt="whatsapp"></a>
+                    <a class="header__container-row-networks-link" href=""><img src="img/header/tel.svg" width="30px;" alt="tel"></a>
                 </div>
-                
-                <a class="header__content-link" href="#"><img class="header__content-link-logo" src="img/logo/camera.svg" alt=""></a>
-
-                <div class="header__content-network">
-                    <a class="header__content-network-link" href="#"><img class="header__content-network-link-icon"  src="img/header/instagram.svg" alt=""></a>
-                    <a class="header__content-network-link" href="#"><img class="header__content-network-link-icon"  src="img/header/facebook.svg" alt=""></a>
-                    <a class="header__content-network-link" href="#"><img class="header__content-network-link-icon"  src="img/header/whatsapp.svg" alt=""></a>
-                    <a class="header__content-network-link" href="#"><img class="header__content-network-link-icon"  src="img/header/tel.svg" alt=""></a>
-                </div>
-
-                <h1 class="header__content-h1">Nata Marts</h1>
-                <h3 class="header__content-h3">Фотограф, відеограф</h3>
-
-                <button class="header__content-button">DISCOVER</button>
-
             </div>
+<!--Мобільна версія меню-->
+            <div class="row header__container-mobMenu">
+                <div class="btn-group header__container-mobMenu-block">
+                    <button type="button" class="btn btn-outline dropdown-toggle header__container-mobMenu-block-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="img/header/icons-menu.svg" style="width: 50px;" alt="menu">
+                    </button>
+                    <div class="dropdown-menu header__container-mobMenu-block-dropdown">
+                      <a class="dropdown-item text-left" href="#">Action</a>
+                      <a class="dropdown-item text-left" href="#">Another action</a>
+                      <a class="dropdown-item text-left" href="#">Something </a>
+                    </div>
+                </div>
+            </div>
+    <!--Мобільна версія соц мереж-->
+            <div class="row header__container-internet">
+                <div class="btn-group header__container-internet-block">
+                    <button type="button" class="btn btn-outline dropdown-toggle header__container-internet-block-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/header/internet.svg" style="width: 50px;" alt="internet">
+                    </button>
+                    <div class="dropdown-menu header__container-internet-block-dropdown">
+                        <a class="dropdown-item text-right"  href="#"><img src="img/header/instagram.svg" width="30px;" alt="instagram"></a>
+                        <a class="dropdown-item text-right" href="#"><img src="img/header/facebook.svg" width="30px;" alt="facebook"></a>
+                        <a class="dropdown-item text-right" href="#"><img src="img/header/whatsapp.svg" width="30px;" alt="whatsapp"></a>
+                        <a class="dropdown-item text-right" href=""><img src="img/header/tel.svg" width="30px;" alt="tel"></a>
+                    </div>
+                </div>
+            </div>
+    <!--кінець мобільній версії-->
+            <div class="row header__container-title">
+                <h1 class="col-xl-12 text-center header__container-title-h1">Nata Marts</h1>
+            </div>
+            <div class="row  header__container-text">
+                <h3 class="col-xl-12 text-center header__container-text-h3">Фотограф, відеограф</h3>
+            </div>
+
+            <div class="row header__container-button">
+                <button type="button" class="btn btn-outline-secondary header__container-button-but">DISCOVER</button>
+            </div>
+        </div>
     </header>
 
+        
+       
+  
+
+
+
+
+
+
     
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    
-    <script src="script.js"></script>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

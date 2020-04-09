@@ -1,0 +1,234 @@
+
+
+$colorTextBlack: black;
+
+
+
+@font-face {
+    font-family: "Lato"; /* Имя шрифта */
+    src: url(fonts/Lato/Lato-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: "PlayfairDisplay"; /* Имя шрифта */
+    src: url(fonts/playfair/PlayfairDisplay-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 900px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    @media (max-width: 543px) { 
+        width: 100%;
+        height: 600px;
+    }
+    &__backgroundImg{
+            margin-top: -510px;
+            opacity: .2;
+            @media (max-width: 543px) {
+                margin-left: -500px;
+            }
+        }
+    &__container{
+        top: -1667px;
+        position: relative;
+        z-index: 2;
+        &-internet{
+            @media (max-width: 543px) {
+                float: right;
+            }
+            &-block{
+               
+                & button::after{
+                    display: none;
+                }
+                & button.btn:focus{
+                    box-shadow: 0 0 0 0.2rem rgba(189, 191, 192, 0.4);
+                }
+                & button{
+                    display: none;
+                    @media (max-width: 543px) {
+                        
+                        margin-top: -80px;
+                        display: inline;
+                        display: grid;
+                        border: none;
+                        cursor: pointer;
+                        & img{
+                            
+                        }
+                    }
+                }
+            }
+        }
+        & .dropdown-menu{
+            background: none;
+            border: none;
+            & .dropdown-item{
+                margin-top: 5px;
+                &:hover{
+                    background: none;
+                }
+            }
+        }
+
+        &-mobMenu{
+            &-block {
+                & button::after{
+                    display: none;
+                }
+                & button.btn:focus{
+                    box-shadow: 0 0 0 0.2rem rgba(189, 191, 192, 0.4);
+                }
+                & button{
+                    display: none;
+                    @media (max-width: 543px) {
+                        display: inline;
+                        margin-top: -60px;
+                        margin-left: 35px;
+                        display: grid;
+                        border: none;
+                        cursor: pointer;
+                        & img{
+                            margin-left: -17.2px;
+                            margin-top: -10px;
+                        }
+                    }
+                }
+                &-dropdown{
+                    display: inline;
+                    & a:hover{
+                        font-weight: bold;
+                    }
+                }
+                &-button{
+                    width: 40px;
+                    height: 40px;
+                    background: none;
+                    outline: none;
+                    margin-top: 10px;
+                    &:hover{
+                        box-shadow: 0 0 0 0.2rem rgba(189, 191, 192, 0.4);
+                    }
+                    
+                    & img{
+                        margin-left: -18px;
+                        margin-top: -12px;
+                    }
+                }
+            }
+        }
+        &-row{
+            width: 1200px;
+            @media (max-width: 543px) {
+                width: 100%
+            }
+        
+            &-nav{
+                padding-top: 25px;
+                margin-left: -30px;
+                
+                &-item{
+                    @media (max-width: 543px){
+                        display: none;
+                    }
+                    &-link{
+                        font-family: "Lato";
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: $colorTextBlack;
+                        &:hover{
+                            color: $colorTextBlack;
+                            padding-bottom: 1px;
+                            border-bottom: 1px solid black;
+                            cursor: pointer;
+                            transition: .7s cubic-bezier(0.18, 0.89, 0.32, 1.08);
+                        }
+                    }
+                }
+            }
+            
+            &-logo {
+                @media (max-width: 543px) { 
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 80px;
+                    margin-top: -10px;
+                    
+                }
+            }
+            &-networks{
+                @media (max-width: 543px) { 
+                    display: none;
+                }
+                &-link{
+                    & img{
+                        margin-top: 30px;
+                        margin-left: 10px;
+                         
+                    }
+                }
+            }
+        }
+        &-title{
+            &-h1{
+                font-size: 120px;
+                font-family: "PlayfairDisplay";
+                font-weight: bold;
+                margin-top: 90px;
+                color: $colorTextBlack;
+                @media (max-width: 543px) {
+                    font-size: 60px;
+                    text-align: center;
+                    margin-top: 200px;
+                } 
+
+            }
+            
+        }
+        &-text{
+            &-h3{
+                font-size: 28px;
+                font-family: "Lato";
+                color: rgb( 108, 106, 104 );
+                margin-top: 20px;
+                color: $colorTextBlack;
+                @media (max-width: 543px) { 
+                    text-align: center;
+                    font-size: 19px;
+                }
+            }
+        }
+        &-button{
+            &-but{
+                font-size: 18px;
+                font-family: "Lato";
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: 220px;
+                height: 52px;
+                background: none;
+                margin-top: 150px;
+                outline: none;
+                @media (max-width: 543px) { 
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 220px;
+                    margin-top: 70px;
+                }
+            }
+        }
+    }
+}
+
