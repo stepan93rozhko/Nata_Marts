@@ -78,7 +78,7 @@
     @media (max-width: 543px) {
       .header__container-internet {
         float: right;
-        margin-top: 5px; } }
+        margin-top: 1px; } }
     .header__container-internet-block button::after {
       display: none; }
     .header__container-internet-block button.btn:focus {
@@ -137,7 +137,11 @@
       .header__container-row-networks-link img {
         margin-top: 30px;
         margin-left: 10px; }
+    @media (max-width: 543px) {
+      .header__container-title {
+        width: 100%; } }
     .header__container-title-h1 {
+      text-align: center;
       font-size: 120px;
       font-family: "PlayfairDisplay";
       font-weight: bold;
@@ -145,9 +149,10 @@
       color: black; }
       @media (max-width: 543px) {
         .header__container-title-h1 {
-          font-size: 60px;
-          text-align: center;
-          margin-top: 200px; } }
+          font-size: 70px;
+          margin-top: 180px;
+          margin-left: 20px;
+          width: 100%; } }
     .header__container-text-h3 {
       font-size: 28px;
       font-family: "Lato";
@@ -187,7 +192,7 @@
   @media (max-width: 543px) {
     .recentWork {
       width: 100%;
-      height: 400px; } }
+      height: 450px; } }
   .recentWork__title {
     width: 700px;
     font-size: 52px;
@@ -210,8 +215,7 @@
     height: 1615px; }
     @media (max-width: 543px) {
       .recentWork__container {
-        width: 80%;
-        height: 400px; } }
+        height: 450px; } }
     .recentWork__container-row {
       margin-top: 30px; }
       .recentWork__container-row img {
