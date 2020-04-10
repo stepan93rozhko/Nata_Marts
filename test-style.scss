@@ -95,6 +95,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         &-internet{
             @media (max-width: 543px) {
                 float: right;
+                margin-top: 5px;
             }
             &-block{
                 & button::after{
@@ -160,7 +161,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 @media (max-width: 543px) { 
                     margin-left: auto;
                     margin-right: auto;
-                    margin-left: 36.5vw;
+                    margin-left: 38.5vw;
                     margin-top: -20px;
                 }
             }
@@ -237,7 +238,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     overflow: hidden;
     @media (max-width: 543px) { 
         width: 100%;
-        height: 600px;
+        height: 450px;
     }
     &__title{
             width: 700px;

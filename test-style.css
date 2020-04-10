@@ -77,7 +77,8 @@
         margin-top: -12px; }
     @media (max-width: 543px) {
       .header__container-internet {
-        float: right; } }
+        float: right;
+        margin-top: 5px; } }
     .header__container-internet-block button::after {
       display: none; }
     .header__container-internet-block button.btn:focus {
@@ -128,7 +129,7 @@
         .header__container-row-logo {
           margin-left: auto;
           margin-right: auto;
-          margin-left: 36.5vw;
+          margin-left: 38.5vw;
           margin-top: -20px; } }
       @media (max-width: 543px) {
         .header__container-row-networks {
@@ -186,7 +187,7 @@
   @media (max-width: 543px) {
     .recentWork {
       width: 100%;
-      height: 600px; } }
+      height: 450px; } }
   .recentWork__title {
     width: 700px;
     font-size: 52px;
