@@ -216,21 +216,26 @@
     height: 1615px; }
     @media (max-width: 543px) {
       .recentWork__container {
-        height: 445px; } }
+        width: 100%;
+        height: 445px;
+        text-align: center; } }
+    .recentWork__container .row {
+      margin-left: auto;
+      margin-right: auto; }
     .recentWork__container-row {
       margin-top: 30px; }
-      @media (max-width: 543px) {
-        .recentWork__container-row {
-          text-align: center;
-          margin-left: auto;
-          margin-right: auto; } }
       .recentWork__container-row img {
         height: 210px;
-        margin: 2px; }
-        @media (max-width: 543px) {
+        margin: 2px;
+        text-align: center; }
+        @media (min-width: 320px) {
           .recentWork__container-row img {
-            width: 73px;
-            height: 73px; } }
+            width: 89px;
+            height: 89px; } }
+        @media (min-width: 360px) {
+          .recentWork__container-row img {
+            width: 99px;
+            height: 99px; } }
 
 .thumb img {
   -webkit-filter: grayscale(0);
