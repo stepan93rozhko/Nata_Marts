@@ -162,7 +162,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                     margin-left: auto;
                     margin-right: auto;
                     margin-left: 38.5vw;
-                    margin-top: -20px;
+                    margin-top: -10px;
                 }
             }
             &-networks{
@@ -231,14 +231,14 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
 }
 
 .recentWork{
-    height: 1550px;
+    height: 1070px;
     width: 1440px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
     @media (max-width: 543px) { 
         width: 100%;
-        height: 450px;
+        height: 400px;
     }
     &__title{
             width: 700px;
@@ -263,7 +263,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         height: 1615px;
         @media (max-width: 543px) {
             width: 80%;
-            height: 550px;
+            height: 400px;
         }
         &-row{
             margin-top: 30px;
