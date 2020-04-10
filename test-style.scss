@@ -270,23 +270,33 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         overflow: scroll;
         height: 1615px;
         @media (max-width: 543px) {
-            
+            width: 100%;
             height: 445px;
+            text-align: center;
+        }
+        & .row{
+            margin-left: auto;
+            margin-right: auto;
+            
         }
         &-row{
             margin-top: 30px;
             @media (max-width: 543px) {
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
+               
             }
             & img{
                 height: 210px;
                 margin: 2px;
-                @media (max-width: 543px) {
+                text-align: center;
+                @media (min-width: 320px) {
                     //height: 100px;
-                   width: 73px;
-                   height: 73px;
+                   width: 89px;
+                   height: 89px;
+                   
+                }
+                @media  (min-width: 360px) {
+                    width: 99px;
+                    height: 99px;
                 }
             }
         }
