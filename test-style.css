@@ -219,6 +219,11 @@
         height: 445px; } }
     .recentWork__container-row {
       margin-top: 30px; }
+      @media (max-width: 543px) {
+        .recentWork__container-row {
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto; } }
       .recentWork__container-row img {
         height: 210px;
         margin: 2px; }
