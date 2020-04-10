@@ -55,7 +55,8 @@
           display: -ms-grid;
           display: grid;
           border: none;
-          cursor: pointer; }
+          cursor: pointer;
+          margin-left: 15px; }
           .header__container-mobMenu-block button img {
             margin-left: -17.2px;
             margin-top: -10px; } }
@@ -129,7 +130,7 @@
         .header__container-row-logo {
           margin-left: auto;
           margin-right: auto;
-          margin-left: 38.5vw;
+          margin-left: 36vw;
           margin-top: -10px; } }
       @media (max-width: 543px) {
         .header__container-row-networks {
@@ -192,7 +193,7 @@
   @media (max-width: 543px) {
     .recentWork {
       width: 100%;
-      height: 450px; } }
+      height: 425px; } }
   .recentWork__title {
     width: 700px;
     font-size: 52px;
@@ -215,7 +216,7 @@
     height: 1615px; }
     @media (max-width: 543px) {
       .recentWork__container {
-        height: 450px; } }
+        height: 445px; } }
     .recentWork__container-row {
       margin-top: 30px; }
       .recentWork__container-row img {
@@ -223,7 +224,8 @@
         margin: 2px; }
         @media (max-width: 543px) {
           .recentWork__container-row img {
-            height: 100px; } }
+            width: 73px;
+            height: 73px; } }
 
 .thumb img {
   -webkit-filter: grayscale(0);
