@@ -130,7 +130,7 @@
           margin-left: auto;
           margin-right: auto;
           margin-left: 38.5vw;
-          margin-top: -20px; } }
+          margin-top: -10px; } }
       @media (max-width: 543px) {
         .header__container-row-networks {
           display: none; } }
@@ -179,7 +179,7 @@
           margin-top: 10vw; } }
 
 .recentWork {
-  height: 1550px;
+  height: 1070px;
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -187,7 +187,7 @@
   @media (max-width: 543px) {
     .recentWork {
       width: 100%;
-      height: 450px; } }
+      height: 400px; } }
   .recentWork__title {
     width: 700px;
     font-size: 52px;
@@ -211,7 +211,7 @@
     @media (max-width: 543px) {
       .recentWork__container {
         width: 80%;
-        height: 550px; } }
+        height: 400px; } }
     .recentWork__container-row {
       margin-top: 30px; }
       .recentWork__container-row img {
