@@ -47,6 +47,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
          &-mobMenu{
                 @media (max-width: 543px) {
                     margin-top: 10px;
+                    
                 }
                 &-block {
                     & button::after{
@@ -57,6 +58,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                     }
                     & button{
                         display: none;
+                        
                         @media (max-width: 543px) {
                             display: inline;
                             margin-top: -60px;
@@ -64,6 +66,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                             display: grid;
                             border: none;
                             cursor: pointer;
+                            margin-left: 15px;
                             & img{
                                 margin-left: -17.2px;
                                 margin-top: -10px;
@@ -161,7 +164,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 @media (max-width: 543px) { 
                     margin-left: auto;
                     margin-right: auto;
-                    margin-left: 38.5vw;
+                    margin-left: 36vw;
                     margin-top: -10px;
                 }
             }
@@ -243,7 +246,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     overflow: hidden;
     @media (max-width: 543px) { 
         width: 100%;
-        height: 450px;
+        height: 425px;
     }
     &__title{
             width: 700px;
@@ -268,15 +271,18 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         height: 1615px;
         @media (max-width: 543px) {
             
-            height: 450px;
+            height: 445px;
         }
         &-row{
             margin-top: 30px;
             & img{
                 height: 210px;
+                
                 margin: 2px;
                 @media (max-width: 543px) {
-                    height: 100px;
+                    //height: 100px;
+                   width: 73px;
+                   height: 73px;
                 }
             }
         }
