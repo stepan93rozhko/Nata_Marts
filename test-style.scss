@@ -95,7 +95,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         &-internet{
             @media (max-width: 543px) {
                 float: right;
-                margin-top: 5px;
+                margin-top: 1px;
             }
             &-block{
                 & button::after{
@@ -179,16 +179,21 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             }
         }
         &-title{
+            @media (max-width: 543px) {
+                width: 100%;
+            }
             &-h1{
+                text-align: center;
                 font-size: 120px;
                 font-family: $fonts-h;
                 font-weight: bold;
                 margin-top: 90px;
                 color: $colorTextBlack;
                 @media (max-width: 543px) {
-                    font-size: 60px;
-                    text-align: center;
-                    margin-top: 200px;
+                    font-size: 70px;
+                    margin-top: 180px;
+                    margin-left: 20px;
+                    width: 100%;
                 } 
             }
         }
@@ -238,7 +243,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     overflow: hidden;
     @media (max-width: 543px) { 
         width: 100%;
-        height: 400px;
+        height: 450px;
     }
     &__title{
             width: 700px;
@@ -262,8 +267,8 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         overflow: scroll;
         height: 1615px;
         @media (max-width: 543px) {
-            width: 80%;
-            height: 400px;
+            
+            height: 450px;
         }
         &-row{
             margin-top: 30px;
