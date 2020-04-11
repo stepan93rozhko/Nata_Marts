@@ -1,5 +1,23 @@
 @charset "UTF-8";
 @font-face {
+  font-family: "Montserrat";
+  /* Имя шрифта */
+  src: url(fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf);
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: "Poiret_One";
+  /* Имя шрифта */
+  src: url(fonts/Poiret_One-h1/PoiretOne-Regular.ttf);
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: "Viaoda_Libre";
+  /* Имя шрифта */
+  src: url(fonts/Viaoda_Libre/ViaodaLibre-Regular.ttf);
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
   font-family: "Lato";
   /* Имя шрифта */
   src: url(fonts/Lato/Lato-Bold.ttf);
@@ -16,7 +34,7 @@
   padding: 0; }
 
 .header {
-  height: 900px;
+  height: 750px;
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -26,7 +44,7 @@
   @media (max-width: 543px) {
     .header {
       width: 100%;
-      height: 600px; } }
+      height: 650px; } }
   .header__backgroundImg {
     margin-top: -510px;
     opacity: .2; }
@@ -106,7 +124,12 @@
         margin-top: 5px; }
         .header__container .dropdown-menu .dropdown-item:hover {
           background: none;
-          font-weight: bold; }
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1); }
     .header__container-row {
       width: 1200px; }
       @media (max-width: 543px) {
@@ -130,11 +153,24 @@
             cursor: pointer;
             -webkit-transition: 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.08);
             -o-transition: 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.08);
-            transition: 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.08); }
+            transition: 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.08);
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1); }
       .header__container-row-logo {
-        margin-top: 10px;
+        margin-top: 25px;
         margin-left: auto;
         margin-right: auto; }
+        .header__container-row-logo:hover {
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1); }
         @media (min-width: 320px) and (max-width: 330px) {
           .header__container-row-logo {
             margin-left: 10vw; } }
@@ -147,13 +183,20 @@
       .header__container-row-networks-link img {
         margin-top: 30px;
         margin-left: 10px; }
+        .header__container-row-networks-link img:hover {
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          transform: scale(1.2); }
     @media (max-width: 543px) {
       .header__container-title {
         width: 100%; } }
     .header__container-title-h1 {
       text-align: center;
       font-size: 120px;
-      font-family: "PlayfairDisplay";
+      font-family: "Poiret_One";
       font-weight: bold;
       margin-top: 200px;
       color: black; }
@@ -165,41 +208,44 @@
           width: 100%; } }
     .header__container-text-h3 {
       font-size: 28px;
-      font-family: "Lato";
+      font-family: "Poiret_One";
       color: #6c6a68;
-      margin-top: 20px;
-      color: black; }
+      margin-top: 20px; }
       @media (max-width: 543px) {
         .header__container-text-h3 {
           text-align: center;
           font-size: 19px; } }
+    .header__container-button .btn:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .header__container-button .btn:hover {
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
     .header__container-button-but {
       font-size: 18px;
-      font-family: "Lato";
+      font-family: "Poiret_One";
       font-weight: bold;
       text-transform: uppercase;
       text-align: center;
       margin-left: auto;
       margin-right: auto;
-      width: 220px;
+      width: 60px;
       height: 52px;
       background: none;
       margin-top: 100px;
       outline: none; }
+      .header__container-button-but img {
+        width: 30px; }
       @media (max-width: 543px) {
         .header__container-button-but {
           margin-left: auto;
           margin-right: auto;
           width: 220px;
           margin-top: 10vw; } }
-    .header__container-down {
-      display: none;
-      margin-left: auto;
-      margin-right: auto;
-      width: 30px;
-      margin-top: 30px; }
-      .header__container-down img {
-        width: 30px; }
 
 .recentWork {
   display: none;
@@ -215,7 +261,7 @@
   .recentWork__title {
     width: 700px;
     font-size: 52px;
-    font-family: "PlayfairDisplay";
+    font-family: "Poiret_One";
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -235,7 +281,7 @@
     @media (max-width: 543px) {
       .recentWork__container {
         width: 100%;
-        height: 445px;
+        height: 420px;
         text-align: center; } }
     .recentWork__container .row {
       margin-left: auto;
@@ -249,12 +295,12 @@
         text-align: center; }
         @media (min-width: 320px) {
           .recentWork__container-row img {
-            width: 80px;
-            height: 80px; } }
+            width: 89px;
+            height: 89px; } }
         @media (min-width: 360px) {
           .recentWork__container-row img {
-            width: 102.5px;
-            height: 102.5px; } }
+            width: 103.5px;
+            height: 103.5px; } }
 
 .thumb img {
   -webkit-filter: grayscale(0);
@@ -301,7 +347,7 @@
   .footer__container-title {
     width: 700px;
     font-size: 52px;
-    font-family: "PlayfairDisplay";
+    font-family: "Poiret_One";
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -328,7 +374,7 @@
         margin-left: auto;
         margin-right: auto; } }
     .footer__container-row-form-button {
-      font-family: "Lato";
+      font-family: "Poiret_One";
       text-transform: uppercase;
       text-align: center;
       margin-left: auto;
