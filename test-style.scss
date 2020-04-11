@@ -1,12 +1,26 @@
 
 $fontsMenu: "Lato";
-$fonts-h: "PlayfairDisplay";
-$fontsButtonAndText: "Lato";
+$fonts-h1: "Poiret_One";
+$fonts-h2: "Poiret_One";
+$fontsButton: "Poiret_One";
+$fontsText: "Poiret_One";
 
 $colorTextBlack: black;
 $colorBlackBorder: black;
 $colorHeaderTextH3: rgb( 108, 106, 104 );
 $colorBoxShadow: rgba(189, 191, 192, 0.4);
+@font-face {
+    font-family: "Montserrat"; /* Имя шрифта */
+    src: url(fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: "Poiret_One"; /* Имя шрифта */
+    src: url(fonts/Poiret_One-h1/PoiretOne-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: "Viaoda_Libre"; /* Имя шрифта */
+    src: url(fonts/Viaoda_Libre/ViaodaLibre-Regular.ttf); /* Путь к файлу со шрифтом */
+}
 @font-face {
     font-family: "Lato"; /* Имя шрифта */
     src: url(fonts/Lato/Lato-Bold.ttf); /* Путь к файлу со шрифтом */
@@ -22,7 +36,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
 }
 
 .header{
-    height: 900px;
+    height: 750px;
     width: 1440px;
     margin-left: auto;
     margin-right: auto;
@@ -31,13 +45,14 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     z-index: 1;
     @media (max-width: 543px) { 
         width: 100%;
-        height: 600px;
+        height: 650px;
     }
     &__backgroundImg{
             margin-top: -510px;
             opacity: .2;
             @media (max-width: 543px) {
                 margin-left: -500px;
+                
             }
         }
     &__container{
@@ -132,7 +147,9 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 margin-top: 5px;
                 &:hover{
                     background: none;
-                    font-weight: bold;
+                    
+                    transition: 0.3s;
+                    transform: scale(1.1);
                 }
             }
         }
@@ -161,15 +178,21 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                             border-bottom: 1px solid $colorBlackBorder;
                             cursor: pointer;
                             transition: .7s cubic-bezier(0.18, 0.89, 0.32, 1.08);
+                            transition: 0.3s;
+                            transform: scale(1.1);
                         }
                     }
                 }
             }
             
             &-logo {
-                margin-top: 10px;
+                margin-top: 25px;
                 margin-left: auto;
                 margin-right: auto;
+                &:hover{
+                    transition: 0.3s;
+                    transform: scale(1.1);
+                }
                 @media (min-width: 320px) and (max-width: 330px) { 
                 margin-left:  10vw;
                 }
@@ -186,6 +209,10 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                      & img{
                         margin-top: 30px;
                         margin-left: 10px;
+                        &:hover{
+                            transition: 0.3s;
+                            transform: scale(1.2);
+                        }
                     }
                 }
             }
@@ -197,7 +224,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             &-h1{
                 text-align: center;
                 font-size: 120px;
-                font-family: $fonts-h;
+                font-family: $fonts-h1;
                 font-weight: bold;
                 margin-top: 200px;
                 color: $colorTextBlack;
@@ -213,10 +240,9 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         &-text{
             &-h3{
                 font-size: 28px;
-                font-family: $fontsButtonAndText;
+                font-family: $fontsText;
                 color: $colorHeaderTextH3;
                 margin-top: 20px;
-                color: $colorTextBlack;
                 @media (max-width: 543px) { 
                     text-align: center;
                     font-size: 19px;
@@ -224,36 +250,35 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             }
         }
         &-button{
+            & .btn:focus{
+                box-shadow: none;
+            }
+            & .btn:hover{
+                transition: 0.3s;
+                transform: scale(1.2);
+            }
             &-but{
                 font-size: 18px;
-                font-family: $fontsButtonAndText;
+                font-family: $fontsButton;
                 font-weight: bold;
                 text-transform: uppercase;
                 text-align: center;
                 margin-left: auto;
                 margin-right: auto;
-                width: 220px;
+                width: 60px;
                 height: 52px;
                 background: none;
                 margin-top: 100px;
                 outline: none;
-               
+               & img{
+                   width: 30px;
+               }
                 @media (max-width: 543px) { 
                     margin-left: auto;
                     margin-right: auto;
                     width: 220px;
                     margin-top: 10vw;
                 }
-            }
-        }
-        &-down{
-            display: none;
-            margin-left: auto;
-            margin-right: auto;
-            width: 30px;
-            margin-top: 30px;
-            & img{
-                width: 30px;
             }
         }
     }
@@ -273,7 +298,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     &__title{
             width: 700px;
             font-size: 52px;
-            font-family: $fonts-h;
+            font-family: $fonts-h2;
             text-align: center;
             margin-left: auto;
             margin-right: auto;
@@ -294,7 +319,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         
         @media (max-width: 543px) {
             width: 100%;
-            height: 445px;
+            height: 420px;
             text-align: center;
         }
         & .row{
@@ -310,12 +335,12 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 margin: 2px;
                 text-align: center;
                 @media (min-width: 320px) {
-                   width: 80px;
-                   height: 80px;
+                   width: 89px;
+                   height: 89px;
                 }
                 @media  (min-width: 360px) {
-                    width: 102.5px;
-                    height: 102.5px; 
+                    width: 103.5px;
+                    height: 103.5px; 
                 }
             }
         }
@@ -372,7 +397,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         &-title{
             width: 700px;
             font-size: 52px;
-            font-family: $fonts-h;
+            font-family: $fonts-h2;
             text-align: center;
             margin-left: auto;
             margin-right: auto;
@@ -404,7 +429,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                     
                 }
                 &-button{
-                    font-family: $fontsButtonAndText;
+                    font-family: $fontsButton;
                     text-transform: uppercase;
                     text-align: center;
                     margin-left: auto;
