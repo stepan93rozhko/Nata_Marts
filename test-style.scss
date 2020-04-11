@@ -156,6 +156,8 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         
         &-row{
             width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
             @media (max-width: 543px) {
                 width: 100%
             }
@@ -196,10 +198,14 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 @media (min-width: 320px) and (max-width: 330px) { 
                 margin-left:  10vw;
                 }
-                @media (min-width: 360px) and (max-width: 367px) { 
-                  margin-left: 20vw;
+                & img{
+                     @media (min-width: 360px) and (max-width: 367px) { 
+                  margin-left: 100px;
+                  margin-top: 18px;
                    
                 }
+                }
+               
             }
             &-networks{
                 @media (max-width: 543px) { 
