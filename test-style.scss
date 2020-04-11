@@ -168,13 +168,13 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             
             &-logo {
                 margin-top: 10px;
-               margin-left: auto;
-               margin-right: auto;
-               @media (min-width: 320px) and (max-width: 330px) { 
+                margin-left: auto;
+                margin-right: auto;
+                @media (min-width: 320px) and (max-width: 330px) { 
                 margin-left:  10vw;
                 }
                 @media (min-width: 360px) and (max-width: 360px) { 
-                   margin-left: 10vw;
+                   margin-left: 12vw;
                 }
             }
             &-networks{
@@ -291,18 +291,20 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         }
         &-row{
             margin-top: 30px;
+            text-align: center;
             & img{
                 height: 210px;
-                margin: 2px;
+                margin: 1px;
                 text-align: center;
                 @media (min-width: 320px) {
-                    //height: 100px;
-                   width: 89px;
-                   height: 89px;
+                   width: 90px;
+                   height: 90px;
+                   margin-left: 2px;
                 }
                 @media  (min-width: 360px) {
                     width: 102.5px;
                     height: 102.5px;
+                    margin-left: 2px;
                 }
             }
         }
