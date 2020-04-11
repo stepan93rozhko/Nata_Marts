@@ -235,14 +235,27 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 width: 220px;
                 height: 52px;
                 background: none;
-                margin-top: 150px;
+                margin-top: 100px;
                 outline: none;
+                &:hover{
+                    
+                }
                 @media (max-width: 543px) { 
                     margin-left: auto;
                     margin-right: auto;
                     width: 220px;
                     margin-top: 10vw;
                 }
+            }
+        }
+        &-down{
+            display: none;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30px;
+            margin-top: 30px;
+            & img{
+                width: 30px;
             }
         }
     }
