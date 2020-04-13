@@ -5,9 +5,11 @@ $fonts-h2: "Poiret_One";
 $fontsButton: "Poiret_One";
 $fontsText: "Poiret_One";
 
+$colorTextH2: black;
+$colorTextH1: black;
 $colorTextBlack: black;
 $colorBlackBorder: black;
-$colorHeaderTextH3: rgb( 108, 106, 104 );
+$colorTextH3: rgb( 108, 106, 104 );
 $colorBoxShadow: rgba(189, 191, 192, 0.4);
 @font-face {
     font-family: "Montserrat"; /* Имя шрифта */
@@ -233,7 +235,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 font-family: $fonts-h1;
                 font-weight: bold;
                 margin-top: 200px;
-                color: $colorTextBlack;
+                color: $colorTextH1;
                 @media (max-width: 543px) {
                     font-size: 70px;
                     margin-top: 40px;
@@ -247,7 +249,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             &-h3{
                 font-size: 28px;
                 font-family: $fontsText;
-                color: $colorHeaderTextH3;
+                color: $colorTextH3;
                 margin-top: 20px;
                 font-weight: bold;
                 @media (max-width: 543px) { 
@@ -313,7 +315,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             margin-left: auto;
             margin-right: auto;
             margin-top: 20px;
-            color: $colorTextBlack;
+            color: $colorTextH2;
             font-weight: bold;
             @media (max-width: 543px) { 
                 width: 200px;
@@ -387,7 +389,142 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     padding: 5px;
 }
 //
-
+.collection{
+    display: none;
+    width: 1440px;
+    height: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 543px) { 
+        width: 100%;
+        height: 360px;
+        overflow: scroll;
+    }
+    &__container{
+        @media (max-width: 543px) { 
+            width: 100%;
+            margin-top: 20px;
+        }
+        margin-top: 120px;
+        & .row{
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &-row{
+            position: relative;
+            margin-top: 10px;
+            height: 300px;
+            @media (max-width: 543px) { 
+                height: 70px;
+            }
+            &:hover{
+                transition: 0.5s;
+                transform: scale(1.04);
+            }
+            & img{
+                height: 300px;
+                width: 450px;
+                position: absolute;
+                left: 1px;
+                @media (max-width: 543px) { 
+                   height: 70px;
+                   width: 120px;
+                }
+            }
+            & h2{
+                width: 680px;
+                height: 80px;
+                font-size: 60px;
+                font-weight: bold;
+                color: $colorTextH2;
+                font-family: $fonts-h2;  
+                position: absolute;  
+                left: 520px; 
+                @media (max-width: 543px) { 
+                    font-size: 15px;
+                    left: 120px;
+                    top: -3px;
+                    width: 180px;
+                    text-align: center;
+                    height: 20px;
+                }    
+            }
+            & p{
+                color: $colorTextBlack;
+                font-family: $fontsText;
+                font-size: 24px;
+                width: 500px;
+                height: 200px;
+                position: absolute;
+                right: 85px;
+                top: 95px;
+                @media (max-width: 543px) { 
+                    font-size: 8px;
+                    width: 160px;
+                    left: 130px;
+                    top: 14px;
+                    height: 60px;
+                }
+            }
+        }
+        &-revers{
+            margin-top: 10px;
+            position: relative;
+            height: 300px;
+            @media (max-width: 543px) { 
+                height: 70px;
+            }
+            &:hover{
+                transition: 0.3s;
+                transform: scale(1.04);
+            }
+            & img{
+                width: 450;
+                height: 300px;
+                position: absolute;
+                right: 1px;
+                @media (max-width: 543px) { 
+                    height: 70px;
+                    width: 120px;
+                }
+            }
+            & h2{
+                width: 680px;
+                height: 80px;
+                font-size: 60px;
+                font-weight: bold;
+                color: $colorTextH2;
+                font-family: $fonts-h2;
+                @media (max-width: 543px) { 
+                    font-size: 15px;
+                    left: 80px;
+                    top: -3px;
+                    width: 170px;
+                    text-align: center;
+                    height: 20px;
+                }   
+            }
+            & p{
+                color: $colorTextBlack;
+                font-family: $fontsText;
+                font-size: 24px;
+                width: 500px;
+                height: 200px;
+                position: absolute;
+                left: 85px;
+                top: 95px;
+                @media (max-width: 543px) { 
+                    font-size: 8px;
+                    width: 155px;
+                    left: 10px;
+                    top: 14px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
 
 .footer{
     display: none;
@@ -403,9 +540,9 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         height: 600px;
     }
     &__container{
-        @media (max-width: 543px) {
-            width: 543px;
-        }
+        // @media (max-width: 543px) {
+        //     width: 543px;
+        // }
         & .form-control{
             margin-left: -15px;
             background: none;
