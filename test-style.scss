@@ -71,9 +71,11 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             @media (max-width: 543px) {
                 margin-top: 20px;
             }
-            @media (min-width: 568px) and (max-width: 640px){
-                margin-top: 40px;
-                
+            @media (min-width: 568px) and (max-width: 639px){
+                margin-top: 30px;
+            }
+            @media (min-width: 640px) and (max-width: 670px){
+                margin-top: 25px;
             }
             &-block {
                 & button::after{
@@ -153,8 +155,9 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                         display: inline;
                     }
                 }
+                
                 & .dropdown-menu{
-                    @media (max-width: 543px) {
+                    @media (max-width: 1440px) {
                         background: none;
                     }
                     @media (min-width: 544px) and (max-width: 767px){
@@ -187,7 +190,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 width: 100%;
             }
             &-nav{
-                padding-top: 25px;
+                padding-top: 20px;
                 margin-left: -30px;
                 &-item{
                     @media (max-width: 767px){
@@ -225,14 +228,16 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 margin-left:  10vw;
                 }
                 @media (min-width: 544px) and (max-width: 767px){
-                    margin-top: -10px;
+                    margin-top: -5px;
                     margin-left: 20px;
                 }
-               
+                @media (min-width: 640px) and (max-width: 670px){
+                    margin-top: 35px;
+                    margin-left: 60px;
+                }
                 & img{
                      @media (min-width: 360px) and (max-width: 367px) { 
                         margin-left: 50px;
-                        
                     }
                 }
                
@@ -346,10 +351,14 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     }
     @media (min-width: 544px) and (max-width: 767px){
         width: 100%;
-        height: 450px;
+        height: 400px;
     }
+    @media (min-width: 640px) and (max-width: 670px){
+        height: 500px;
+    }
+    
     @media  (max-width: 360px) {
-        height: 415px;
+        height: 400px;
     }
     &__title{
             width: 700px;
@@ -375,16 +384,15 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         background: white;
         overflow: scroll;
         height: 670px;
-        
-        // @media (max-width: 543px) {
-        //     width: 100%;
-        //     height: 420px;
-        //     text-align: center;
-        // }
+        @media (min-width: 640px) and (max-width: 670px){
+            height: 350px;
+        }
         @media  (max-width: 360px) {
             height: 300px;
         }
-        
+        @media (min-width: 544px) and (max-width: 767px){
+            height: 310px;
+        }
        
         & .row{
             margin-left: auto;
@@ -395,9 +403,6 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             @media  (min-width: 360px) and (max-width: 366px) {
                 margin-left: 7px;
             }
-            @media (min-width: 544px) and (max-width: 767px){
-                 
-            }
         }
         &-row{
             
@@ -405,7 +410,6 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             height: 650px;
             width: 100%;
             text-align: center;
-           
             & img{
                 height: 210px;
                 margin: 1px;
@@ -417,6 +421,10 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 @media  (min-width: 360px) {
                     width: 103.5px;
                     height: 103.5px; 
+                }
+                @media (min-width: 640px) and (max-width: 670px){
+                   width: 122px;
+                   height: 122px;
                 }
             }
         }
@@ -447,21 +455,28 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     margin-right: auto;
     @media (max-width: 543px) { 
         width: 100%;
-        height: 400px;
+        height: 450px;
         overflow: scroll;
     }
     @media (min-width: 544px) and (max-width: 767px){
         width: 100%;
-        height: 400px;
+        height: 680px;
         overflow: scroll;
+    }
+    @media (min-width: 640px) and (max-width: 670px){
+       height: 680px;
+       overflow: scroll;
     }
     &__container{
         @media (max-width: 543px) { 
-            width: 100%;
-            margin-top: 70px;
+            width: 90%;
+            margin-top: 30px;
         }
         @media (min-width: 544px) and (max-width: 767px){
-            width: 100%
+            width: 100%;
+            top: 1px;
+            margin-top: 10px;
+            height: 650px;
         }
         margin-top: 120px;
         & .row{
@@ -471,14 +486,14 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         }
         &-row{
             position: relative;
-            margin-top: 20px;
+            margin-top: 30px;
             height: 300px;
             @media (max-width: 543px) { 
                 height: 70px;
             }
             @media (min-width: 544px) and (max-width: 767px){
-                height: 70px;
-                margin-top: -35px;
+                height: 120px;
+                
             }
             &:hover{
                 transition: 0.5s;
@@ -494,8 +509,8 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                    width: 120px;
                 }
                 @media (min-width: 544px) and (max-width: 767px){
-                    height: 70px;
-                    width: 120px;
+                    height: 120px;
+                    width: 170px;
                 }
             }
             & h2{
@@ -516,11 +531,12 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                     height: 20px;
                 }    
                 @media (min-width: 544px) and (max-width: 767px){
-                    font-size: 15px;
-                    left: 120px;
-                    width: 180px;
+                    font-size: 24px;
+                    width: 240px;
                     text-align: center;
-                    height: 20px;
+                    height: 24px;
+                    left: 180px;
+                    margin-top: -5px;
                 }
             }
             & p{
@@ -540,23 +556,24 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                     height: 60px;
                 }
                 @media (min-width: 544px) and (max-width: 767px){
-                    font-size: 8px;
-                    width: 160px;
+                    font-size: 14px;
+                    width: 300px;
                     left: 130px;
-                    top: 14px;
-                    height: 60px;
+                    top: 20px;
+                    height: 100px;
+                    margin-left: 52px;
                 }
             }
         }
         &-revers{
-            margin-top: 10px;
+            margin-top: 30px;
             position: relative;
             height: 300px;
             @media (max-width: 543px) { 
                 height: 70px;
             }
             @media (min-width: 544px) and (max-width: 767px){
-                height: 70px;
+                height: 120px;
             }
             &:hover{
                 transition: 0.3s;
@@ -572,8 +589,8 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                     width: 120px;
                 }
                 @media (min-width: 544px) and (max-width: 767px){
-                    height: 70px;
-                    width: 120px;
+                    height: 120px;
+                    width: 170px;
                 }
             }
             & h2{
@@ -581,22 +598,30 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 height: 80px;
                 font-size: 60px;
                 font-weight: bold;
+                position: absolute;
                 color: $colorTextH2;
                 font-family: $fonts-h2;
                 @media (max-width: 543px) { 
                     font-size: 15px;
-                    left: 80px;
+                    
                     top: -3px;
                     width: 170px;
                     text-align: center;
                     height: 20px;
                 }   
                 @media (min-width: 544px) and (max-width: 767px){
-                    font-size: 15px;
-                    left: 80px;
-                    width: 170px;
+                    font-size: 24px;
+                    left: 120px;
+                    margin-top: -5px;
+                    width: 240px;
                     text-align: center;
                     height: 20px;
+                }
+                @media (min-width: 360px) and (max-width: 367px) { 
+                    left: 40px;
+                }
+                @media (min-width: 640px) and (max-width: 670px){
+                    left: 100px;
                 }
             }
             & p{
@@ -608,19 +633,26 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 position: absolute;
                 left: 85px;
                 top: 95px;
+                text-align: right;
                 @media (max-width: 543px) { 
                     font-size: 8px;
                     width: 155px;
-                    left: 10px;
+                    left: 5px;
                     top: 14px;
                     height: 60px;
                 }
                 @media (min-width: 544px) and (max-width: 767px){
-                    font-size: 8px;
-                    width: 155px;
-                    left: 10px;
-                    top: 14px;
-                    height: 60px;
+                    font-size: 14px;
+                    width: 300px;
+                    left: 53px;
+                    top: 20px;
+                    height: 100px;
+                }
+                @media (min-width: 360px) and (max-width: 367px) { 
+                    left: 45px;
+                }
+                @media (min-width: 640px) and (max-width: 670px){
+                  left: 27px;
                 }
             }
         }
@@ -642,6 +674,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     }
     @media (min-width: 544px) and (max-width: 767px){
         width: 100%;
+        height: 620px;
     }
     &__container{
         @media (max-width: 543px) {
@@ -663,6 +696,9 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 margin-right: auto;
                 width: 95%;
             }
+            @media (min-width: 544px) and (max-width: 767px){
+                margin-left: 25px;
+            }
         }
         &-title{
             width: 700px;
@@ -682,7 +718,9 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             @media (min-width: 544px) and (max-width: 767px){
                 font-size: 30px;
                 width: 220px;
-                
+            }
+            @media (min-width: 544px) and (max-width: 767px){
+                margin-top: 10px;
             }
         }
         &-row{
