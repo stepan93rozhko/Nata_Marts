@@ -63,7 +63,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     &__backgroundImg{
             margin-top: -510px;
             opacity: .2;
-            @media (min-width: 320px) and (max-width: 360px) {
+            @media (min-width: 320px) and (max-width: 543px) {
                 margin-left: -530px;
             }
             @media (min-width: 544px) and (max-width: 767px){
@@ -72,6 +72,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             @media (min-width: 768px) and (max-width: 1024px){
                 margin-left: -300px;
             }
+            
         }
     &__container{
         top: -1667px;

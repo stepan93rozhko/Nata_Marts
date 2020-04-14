@@ -59,7 +59,7 @@
   .header__backgroundImg {
     margin-top: -510px;
     opacity: .2; }
-    @media (min-width: 320px) and (max-width: 360px) {
+    @media (min-width: 320px) and (max-width: 543px) {
       .header__backgroundImg {
         margin-left: -530px; } }
     @media (min-width: 544px) and (max-width: 767px) {
