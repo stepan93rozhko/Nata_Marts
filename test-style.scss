@@ -199,14 +199,32 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 & .dropdown-menu{
                     & a{
                         margin-left: 10px;
-                        @media (min-width: 812px) and (max-width: 999px){
-                           margin-left: -40px; 
+                        @media (min-width: 375px) and (max-width: 513px){
+                            margin-left: 10px; 
                         }
-                        @media (min-width: 640px) and (max-width: 811px){
+                        @media (min-width: 568px) and (max-width: 639px){
+                            margin-left: 5px; 
+                        }
+                        @media (min-width: 640px) and (max-width: 666px){
                             margin-left: -40px; 
                         }
-                        @media (min-width: 736px) and (max-width: 767px) {
-                            margin-left: -80px;
+                        @media (min-width: 667px) and (max-width: 730px){
+                            margin-left: -55px; 
+                        }
+                        @media (min-width: 731px) and (max-width: 735px){
+                            margin-left: -80px; 
+                        }
+                        @media (min-width: 736px) and (max-width: 767px){
+                            margin-left: -80px; 
+                        }
+                        @media (min-width: 768px) and (max-width: 811px){
+                            margin-left: -20px; 
+                        }
+                        @media (min-width: 812px) and (max-width: 822px){
+                            margin-left: -40px; 
+                        }
+                        @media (min-width: 823px) and (max-width: 999px){
+                            margin-left: -40px; 
                         }
                     }
                     @media (max-width: 1440px) {
