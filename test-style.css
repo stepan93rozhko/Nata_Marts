@@ -1026,15 +1026,94 @@
       color: black;
       text-decoration: none; }
 
-.galery-window .modal-dialog .modal-content {
-  width: 814px; }
-  .galery-window .modal-dialog .modal-content h2 {
-    font-size: 30px;
-    color: black;
-    font-family: "Poiret_One";
-    text-align: center; }
-  .galery-window .modal-dialog .modal-content .row {
-    margin-left: 1px; }
-    .galery-window .modal-dialog .modal-content .row img {
-      width: 200px;
-      height: 150px; }
+@media (min-width: 320px) and (max-width: 374px) {
+  .bd-example-modal-lg .modal-dialog {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (min-width: 375px) and (max-width: 513px) {
+  .bd-example-modal-lg .modal-dialog {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (min-width: 568px) and (max-width: 666px) {
+  .bd-example-modal-lg .modal-dialog {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.bd-example-modal-lg .modal-dialog .modal-content h2 {
+  font-size: 30px;
+  color: black;
+  font-family: "Poiret_One";
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px; }
+  .bd-example-modal-lg .modal-dialog .modal-content h2 button {
+    position: relative;
+    top: 0px;
+    right: 10px;
+    outline: none; }
+    .bd-example-modal-lg .modal-dialog .modal-content h2 button:hover {
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      -webkit-transform: scale(1.04);
+      -ms-transform: scale(1.04);
+      transform: scale(1.04); }
+
+.bd-example-modal-lg .modal-dialog .modal-content .row {
+  margin-left: 1px; }
+  .bd-example-modal-lg .modal-dialog .modal-content .row img {
+    width: 200px;
+    height: 150px; }
+    @media (min-width: 320px) and (max-width: 359px) {
+      .bd-example-modal-lg .modal-dialog .modal-content .row img {
+        width: 86px;
+        height: 86px; } }
+    @media (min-width: 360px) and (max-width: 374px) {
+      .bd-example-modal-lg .modal-dialog .modal-content .row img {
+        width: 97px;
+        height: 97px; } }
+    @media (min-width: 375px) and (max-width: 410px) {
+      .bd-example-modal-lg .modal-dialog .modal-content .row img {
+        width: 102px;
+        height: 102px; } }
+    @media (min-width: 411px) and (max-width: 413px) {
+      .bd-example-modal-lg .modal-dialog .modal-content .row img {
+        width: 112px;
+        height: 112px; } }
+    @media (min-width: 414px) and (max-width: 513px) {
+      .bd-example-modal-lg .modal-dialog .modal-content .row img {
+        width: 112px;
+        height: 112px; } }
+    @media (min-width: 568px) and (max-width: 639px) {
+      .bd-example-modal-lg .modal-dialog .modal-content .row img {
+        width: 117.5px;
+        height: 117.5px; } }
+    @media (min-width: 640px) and (max-width: 666px) {
+      .bd-example-modal-lg .modal-dialog .modal-content .row img {
+        width: 122px;
+        height: 122px; } }
+    @media (min-width: 667px) and (max-width: 735px) {
+      .bd-example-modal-lg .modal-dialog .modal-content .row img {
+        width: 121.5px;
+        height: 121.5px; } }
+    @media (min-width: 736px) and (max-width: 767px) {
+      .bd-example-modal-lg .modal-dialog .modal-content .row img {
+        width: 121.5px;
+        height: 121.5px; } }
+    @media (min-width: 768px) and (max-width: 999px) {
+      .bd-example-modal-lg .modal-dialog .modal-content .row img {
+        width: 162px;
+        height: 162px; } }
+    @media (min-width: 1024px) and (max-width: 1200px) {
+      .bd-example-modal-lg .modal-dialog .modal-content .row img {
+        width: 157px;
+        height: 157px; } }
+    @media (min-width: 1200px) {
+      .bd-example-modal-lg .modal-dialog .modal-content .row img {
+        width: 157px;
+        height: 157px; } }
