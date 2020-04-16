@@ -68,6 +68,14 @@
     @media (min-width: 768px) and (max-width: 1024px) {
       .header__backgroundImg {
         margin-left: -300px; } }
+  .header__galegy-row {
+    width: 80%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 40;
+    vertical-align: baseline; }
   .header__container {
     top: -1667px;
     position: relative;
@@ -536,21 +544,6 @@
             height: 150px;
             width: 150px; } }
 
-.thumb img {
-  -webkit-filter: grayscale(0);
-  filter: none;
-  border-radius: 5px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 5px; }
-
-.thumb img:hover {
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1); }
-
-.thumb {
-  padding: 5px; }
-
 .collection {
   display: none;
   width: 1440px;
@@ -1001,3 +994,47 @@
       @media (max-width: 543px) {
         .footer__container-menuBotom-networks {
           margin-top: -20px; } }
+
+.thumb img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px; }
+
+.thumb img:hover {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1); }
+
+.thumb {
+  padding: 5px; }
+
+.contact-window__dialog .modal-content {
+  background-color: rgba(255, 255, 255, 0.952); }
+  .contact-window__dialog .modal-content .modal-header h2 {
+    color: black;
+    font-size: 35px;
+    font-family: "Poiret_One"; }
+  .contact-window__dialog .modal-content .modal-body h5 {
+    width: 60%;
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+    font-family: "Poiret_One"; }
+    .contact-window__dialog .modal-content .modal-body h5 a {
+      color: black;
+      text-decoration: none; }
+
+.galery-window .modal-dialog .modal-content {
+  width: 814px; }
+  .galery-window .modal-dialog .modal-content h2 {
+    font-size: 30px;
+    color: black;
+    font-family: "Poiret_One";
+    text-align: center; }
+  .galery-window .modal-dialog .modal-content .row {
+    margin-left: 1px; }
+    .galery-window .modal-dialog .modal-content .row img {
+      width: 200px;
+      height: 150px; }

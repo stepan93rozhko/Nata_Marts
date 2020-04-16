@@ -4,6 +4,7 @@ $fonts-h1: "Poiret_One";
 $fonts-h2: "Poiret_One";
 $fontsButton: "Poiret_One";
 $fontsText: "Poiret_One";
+$fontsNumber: "Poiret_One";
 
 $colorTextH2: black;
 $colorTextH1: black;
@@ -75,7 +76,16 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             }
            
             
-        }
+    }
+    &__galegy-row{
+        width: 80%;
+        height: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 40;
+        vertical-align: baseline;
+    }
     &__container{
         top: -1667px;
         position: relative;
@@ -591,23 +601,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         }
     }
 }
-//фото галерея
-.thumb img {
-    -webkit-filter: grayscale(0);
-    filter: none;
-    border-radius: 5px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 5px;
-}
-.thumb img:hover {
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-}
-.thumb {
-    padding: 5px;
-}
-//
+
 .collection{
     display: none;
     width: 1440px;
@@ -1079,3 +1073,73 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     }
 }
 
+//фото галерея
+.thumb img {
+    -webkit-filter: grayscale(0);
+    filter: none;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.thumb img:hover {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+.thumb {
+    padding: 5px;
+}
+//
+
+// contact window////////////////////////////////////////////
+.contact-window{
+    &__dialog{
+        & .modal-content{
+            background-color: rgba(255, 255, 255, 0.952);
+            & .modal-header{
+                & h2{
+                   color: $colorTextH2;
+                   font-size: 35px;
+                   font-family: $fonts-h2;
+                }
+            }
+            & .modal-body{
+                & h5{
+                    width: 60%;
+                    position: relative;
+                    left: 20px;
+                    font-size: 20px;
+                    font-family: $fontsNumber;
+                    & a{
+                        color: $colorTextBlack; 
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+///////////////////////////////////////////////////////////
+
+//galery-window//////////////////////////////////////////////
+.galery-window{
+    & .modal-dialog{
+        & .modal-content{
+            width: 814px;
+            & h2{
+                font-size: 30px;
+                color: $colorTextH2;
+                font-family: $fonts-h2;
+                text-align: center;
+            }
+            & .row{
+                margin-left: 1px;
+                & img{
+                    width: 200px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+////////////////////////////////////////////////////////////
