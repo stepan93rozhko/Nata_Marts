@@ -472,7 +472,7 @@
         width: 300px; } }
   .recentWork__container {
     background: white;
-    overflow: scroll;
+    overflow: auto;
     height: 670px; }
     @media (min-width: 640px) and (max-width: 670px) {
       .recentWork__container {
@@ -547,7 +547,7 @@
 .collection {
   display: none;
   width: 1440px;
-  height: 1250px;
+  height: 1650px;
   margin-left: auto;
   margin-right: auto; }
   @media (max-width: 543px) {
