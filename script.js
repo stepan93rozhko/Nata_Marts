@@ -5,6 +5,7 @@ $(document).ready(function(){
         $(".recentWork").toggle();
         $(".collection").toggle();
         $(".footer").toggle();
+        $(".header__container-button").toggle();
     });
     
 

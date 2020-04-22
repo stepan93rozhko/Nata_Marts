@@ -1,5 +1,5 @@
 
-$fontsMenu: "Lato";
+$fontsMenu: "Poiret_One";
 $fonts-h1: "Poiret_One";
 $fonts-h2: "Poiret_One";
 $fontsButton: "Poiret_One";
@@ -10,7 +10,8 @@ $colorTextH2: black;
 $colorTextH1: black;
 $colorTextBlack: black;
 $colorBlackBorder: black;
-$colorTextH3: rgb( 108, 106, 104 );
+$colorTextH3: black;
+// $colorTextH3: rgb( 108, 106, 104 );
 $colorBoxShadow: rgba(189, 191, 192, 0.4);
 @font-face {
     font-family: "Montserrat"; /* Имя шрифта */
@@ -39,44 +40,64 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
 }
 
 .header{
-    height: 750px;
+    // height: 750px;
     width: 1440px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
     position: relative;
     z-index: 1;
-   
-    @media (max-width: 543px) { 
-        width: 100%;
-        height: 500px;
+    @media (min-width: 320px) and (max-width: 374px){
+        width: 100%; 
     }
-    @media (min-width: 544px) and (max-width: 767px){
+    @media (min-width: 375px) and (max-width: 543px) {
+        width: 100%;
+    }
+    @media (min-width: 544px) and (max-width: 567px){
         width: 100%;
         height: 380px;
     }
+    @media (min-width: 568px) and (max-width: 639px){
+        width: 100%;
+        height: 310px;
+    }
+    @media (min-width: 640px) and (max-width: 730px) { 
+        width: 100%;
+        height: 390px;
+    }
+    @media (min-width: 731px) and (max-width: 767px) { 
+        width: 100%;
+        height: 390px;
+    }
     @media (min-width: 768px) and (max-width: 1024px){
         width: 100%;
-        height: 500px;
     }
-    @media (min-width: 1024px) and (max-width: 1199px){
-        width: 100%;
-    }
+    
     &__backgroundImg{
-            margin-top: -510px;
-            opacity: .2;
-            @media (min-width: 320px) and (max-width: 543px) {
-                margin-left: -530px;
-            }
-            @media (min-width: 544px) and (max-width: 767px){
-                margin-left: -400px;
-            }
-            @media (min-width: 768px) and (max-width: 1024px){
-                margin-left: -300px;
-            }
-           
+        width: 100%;
+        opacity: .5;
+        @media (min-width: 320px) and (max-width: 374px){
+            width: 1440px;
+            margin-left: -690px;
+        }
+        @media (min-width: 375px) and (max-width: 413px) {
+            width: 1440px;
+            margin-left: -670px;
+        }
+        @media (min-width: 411px) and (max-width: 413px) {
+            width: 1440px;
+            margin-left: -640px;
+        }
+        @media (min-width: 414px) and (max-width: 542px) {
+            width: 1440px;
+            margin-left: -650px;
+        }
+        @media (min-width: 1024px) and (max-width: 1199px) {
+            width: 100%;
+        }   
             
     }
+    
     &__galegy-row{
         width: 80%;
         height: 60%;
@@ -87,10 +108,42 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         vertical-align: baseline;
     }
     &__container{
-        top: -1667px;
-        position: relative;
+        top: 1px;
+        position: absolute;
         z-index: 2;
-        
+        width: 100%;
+        left: 150px;
+        @media (min-width: 320px) and (max-width: 374px){
+            left: 1px;
+        }
+        @media (min-width: 375px) and (max-width: 639px) {
+            top: 5px;
+            left: 0px;
+        }
+        @media (min-width: 640px) and (max-width: 666px) { 
+            left: 50px;
+        }
+        @media (min-width: 667px) and (max-width: 730px) { 
+           left: 70px;
+        }
+        @media (min-width: 731px) and (max-width: 735px) { 
+            left: 100px;
+        }
+        @media (min-width: 736px) and (max-width: 767px) {
+            left: 100px;
+        }
+        @media (min-width: 768px) and (max-width: 811px) {
+            left: 30px;
+        }
+        @media (min-width: 812px) and (max-width: 1023px) {
+            left: 50px;
+        }
+        @media (min-width: 1024px) and (max-width: 1199px){
+            left: 4%;
+        }
+        @media (min-width: 1200px){
+            left: 140px;
+        }
         &-mobMenu{
             @media (max-width: 543px) {
                 margin-top: 20px;
@@ -282,7 +335,24 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                     @media (min-width: 1024px) and (max-width: 1199px){
                         margin-left: 20px;
                     }
-
+                    & .dropdown-menu{
+                        font-family: $fontsMenu;
+                        font-weight: bold;
+                        font-size: 18px;
+                        color: $colorTextBlack;
+                        background: none;
+                        & a{
+                            &:hover{
+                                font-weight: bold;
+                                color: $colorTextBlack;
+                                padding-bottom: 1px;
+                                cursor: pointer;
+                                transition: .7s cubic-bezier(0.18, 0.89, 0.32, 1.08);
+                                transition: 0.5s;
+                                transform: scale(1.1);
+                            }
+                        }    
+                    }
                     &-link{
                         font-family: $fontsMenu;
                         font-size: 18px;
@@ -376,11 +446,9 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 padding-left: 30px;
                 margin-right: 0px;
             }
-            @media (min-width: 414px) and (max-width: 542px){
+           
+            @media (min-width: 414px) and (max-width: 543px){
                 width: 100%; 
-            }
-            @media (max-width: 543px) {
-                width: 100%;
             }
             @media (min-width: 544px) and (max-width: 767px){
                 margin-top: -170px;
@@ -393,29 +461,63 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             }
             &-h1{
                 text-align: center;
-                font-size: 120px;
+                font-size: 160px;
                 font-family: $fonts-h1;
                 font-weight: bold;
                 margin-top: 200px;
                 color: $colorTextH1;
-                @media (max-width: 320px) {
-                    margin-top: 30px;
-                    font-size: 50px;
-                }
-                @media (min-width: 321px) and (max-width: 543px) {
+                
+                @media (min-width: 320px) and (max-width: 359px){
                     font-size: 60px;
-                    margin-top: 60px;
+                    margin-top: 170px;
                     margin-left: 8vw;
                     width: 100%;
-                } 
-                @media (min-width: 544px) and (max-width: 767px){
-                    font-size: 50px;
-                    
                 }
-                @media (min-width: 768px) and (max-width: 1024px){
+                @media (min-width: 360px) and (max-width: 374px){
+                    font-size: 80px;
+                    margin-top: 190px;
+                    margin-left: 13vw;
+                    width: 100%;
+                }
+                @media (min-width: 375px) and (max-width: 543px) {
+                  font-size: 60px;
+                  width: 100%;
+                  margin-left: 50px;
+                }
+                @media (min-width: 544px) and (max-width: 567px){
+                    font-size: 50px;
+                }
+                @media (min-width: 568px) and (max-width: 639px){
+                    margin-top: 180px;
+                    font-size: 60px;
+                }
+                @media (min-width: 640px) and (max-width: 730px) { 
+                    font-size: 65px;
+                    margin-top: 200px;
+                }
+                @media (min-width: 731px) and (max-width: 735px) { 
+                    font-size: 75px;
+                    margin-top: 240px;
+                }
+                @media (min-width: 736px) and (max-width: 767px) {
+                   font-size: 75px;
+                   margin-top: 240px;
+                }
+                @media (min-width: 768px) and (max-width: 811px){
                     font-size: 75px;
                     margin-top: 80px;
+                    margin-left: 40px;
                     width: 100%;
+                }
+                @media (min-width: 812px) and (max-width: 1023px) {
+                    font-size: 60px;
+                    margin-top: 65px;
+                    width: 100%;
+                    
+                }
+                @media (min-width: 1024px) and (max-width: 1199px){
+                    font-size: 120px;
+                    margin-top: 130px;
                 }
             }
         }
@@ -475,40 +577,29 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
 
 .recentWork{
     display: none;
-    height: 750px;
     width: 1440px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    @media (max-width: 543px) { 
-        width: 100%;
-        height: 392px;
-    }
-    @media (min-width: 544px) and (max-width: 767px){
-        width: 100%;
-        height: 400px;
-    }
-    @media (min-width: 640px) and (max-width: 670px){
-        height: 500px;
-    }
-    @media  (max-width: 360px) {
-        height: 400px;
-    }
-    @media (min-width: 768px) and (max-width: 1024px){
-        width: 100%;
-        height: 500px;
-    }
+    width: 100%;
+    
     &__title{
             width: 700px;
-            font-size: 52px;
+            font-size: 45px;
             font-family: $fonts-h2;
             text-align: center;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 20px;
+            margin-top: 40px;
             color: $colorTextH2;
             font-weight: bold;
-            @media (max-width: 543px) { 
+            @media (min-width: 320px) and (max-width: 359px) {
+                width: 200px;
+                font-size: 30px;
+                margin-top: 20px;
+                text-align: center;
+            }
+            @media (min-width: 360px) and (max-width: 543px){
                 width: 200px;
                 font-size: 30px;
                 margin-top: 20px;
@@ -517,8 +608,15 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             @media (min-width: 544px) and (max-width: 767px){
                 width: 100%;
             }
-            @media (min-width: 768px) and (max-width: 1024px){
-                width: 300px; 
+            @media (min-width: 768px) and (max-width: 1023px){
+                width: 100%; 
+            }
+            @media (min-width: 1024px) and (max-width: 1199px){
+                width: 100%;
+                margin-top: 100px;
+            }
+            @media (min-width: 1200px) {
+                margin-top: 70px;
             }
         }
     &__container{
@@ -612,7 +710,6 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
 .collection{
     display: none;
     width: 1440px;
-    height: 1650px;
     margin-left: auto;
     margin-right: auto;
     @media (min-width: 320px) and (max-width: 374px){
@@ -633,7 +730,6 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     }
     @media (min-width: 736px) and (max-width: 767px){
         width: 100%;
-        height: 750px;
     }
     @media (min-width: 768px) and (max-width: 1024px){
         width: 100%;
@@ -641,7 +737,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     }
     @media (min-width: 1024px) and (max-width: 1199px){
         width: 100%;
-        height: 1150px;
+        
     }
     &__container{
         @media (max-width: 543px) { 
@@ -686,15 +782,23 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 width: 450px;
                 position: absolute;
                 left: 1px;
-                @media (max-width: 543px) { 
-                   height: 70px;
-                   width: 120px;
+                @media (min-width: 320px) and (max-width: 374px){
+                    height: 90px;
+                    width: 140px;
+                }
+                @media (min-width: 375px) and (max-width: 413px) { 
+                    height: 90px;
+                    width: 140px;
+                }
+                @media (min-width: 414px) and (max-width: 543px) { 
+                   height: 90px;
+                   width: 140px;
                 }
                 @media (min-width: 544px) and (max-width: 767px){
                     height: 120px;
                     width: 170px;
                 }
-                @media (min-width: 768px) and (max-width: 1024px){
+                @media (min-width: 768px) and (max-width: 1023px){
                     height: 160px;
                     width: 250px;
                 }
@@ -706,38 +810,69 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             & h2{
                 width: 680px;
                 height: 80px;
-                font-size: 60px;
+                font-size: 45px;
                 font-weight: bold;
                 color: $colorTextH2;
                 font-family: $fonts-h2;  
                 position: absolute;  
                 left: 520px; 
-                @media (max-width: 543px) { 
+                @media (min-width: 320px) and (max-width: 374px){
                     font-size: 15px;
-                    left: 120px;
+                    left: 140px;
+                    width: 150px;
+                    text-align: center;
+                    height: 20px;
+                }
+                @media (min-width: 375px) and (max-width: 413px) { 
+                    font-size: 15px;
+                    left: 140px;
+                    width: 180px;
+                    text-align: center;
+                    height: 20px;
+                }
+                @media (min-width: 414px) and (max-width: 567px) { 
+                    font-size: 15px;
+                    left: 140px;
                     top: -3px;
                     width: 180px;
                     text-align: center;
                     height: 20px;
-                }    
-                @media (min-width: 544px) and (max-width: 767px){
-                    font-size: 24px;
-                    width: 240px;
+                }  
+                @media (min-width: 568px) and (max-width: 666px){
+                    font-size: 25px;
+                    left: 170px;
+                    top: -3px;
+                    width: 350px;
                     text-align: center;
-                    height: 24px;
-                    left: 180px;
-                    margin-top: -5px;
+                    height: 20px;
                 }
-                @media (min-width: 768px) and (max-width: 1024px){
-                    font-size: 24px;
+                @media (min-width: 667px) and (max-width: 735px) { 
+                    font-size: 25px;
+                    left: 170px;
+                    top: -3px;
+                    width: 350px;
+                    text-align: center;
+                    height: 20px;
+                }  
+                @media (min-width: 736px) and (max-width: 767px) { 
+                    font-size: 25px;
+                    left: 170px;
+                    width: 350px;
+                    text-align: center;
+                    height: 20px;
+                }
+                @media (min-width: 768px) and (max-width: 1023px){
+                    font-size: 28px;
                     width: 350px;
                     text-align: center;
                     left: 250px;
-                    font-size: 28px;
+                    height: 25px;
                 }
                 @media (min-width: 1024px) and (max-width: 1199px){
+                    width: 350px;
                     left: 300px;
                     font-size: 30px;
+                    text-align: center;
                 }
             }
             & p{
@@ -748,23 +883,50 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 height: 200px;
                 position: absolute;
                 right: 85px;
-                top: 95px;
-                @media (max-width: 543px) { 
+                top: 65px;
+                @media (min-width: 320px) and (max-width: 374px){
                     font-size: 8px;
-                    width: 160px;
-                    left: 130px;
-                    top: 14px;
+                    width: 150px;
+                    left: 150px;
+                    top: 19px;
                     height: 60px;
                 }
-                @media (min-width: 544px) and (max-width: 767px){
+                @media (min-width: 375px) and (max-width: 413px) { 
+                    font-size: 8px;
+                    width: 160px;
+                    left: 150px;
+                    top: 19px;
+                    height: 60px;
+                }
+                @media (min-width: 414px) and (max-width: 567px) { 
+                    font-size: 8px;
+                    width: 160px;
+                    left: 150px;
+                    top: 19px;
+                    height: 60px;
+                }
+                @media (min-width: 568px) and (max-width: 666px){
                     font-size: 14px;
                     width: 300px;
-                    left: 130px;
-                    top: 20px;
+                    left: 185px;
+                    top: 23px;
                     height: 100px;
-                    margin-left: 52px;
                 }
-                @media (min-width: 768px) and (max-width: 1024px){
+                @media (min-width: 667px) and (max-width: 735px) { 
+                    font-size: 14px;
+                    width: 300px;
+                    left: 185px;
+                    top: 23px;
+                    height: 100px;
+                }
+                @media (min-width: 736px) and (max-width: 767px){
+                    font-size: 14px;
+                    width: 300px;
+                    left: 185px;
+                    top: 25px;
+                    height: 100px;
+                }
+                @media (min-width: 768px) and (max-width: 1023px){
                     font-size: 18px;
                     width: 350px;
                     top: 30px;
@@ -780,7 +942,8 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             }
         }
         &-revers{
-            margin-top: 30px;
+            margin-top: 60px;
+            margin-bottom: 60px;
             position: relative;
             height: 300px;
             @media (max-width: 543px) { 
@@ -789,7 +952,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             @media (min-width: 544px) and (max-width: 767px){
                 height: 120px;
             }
-            @media (min-width: 768px) and (max-width: 1024px){
+            @media (min-width: 768px) and (max-width: 1023px){
                 height: 160px;
             }
             @media (min-width: 1024px) and (max-width: 1199px){
@@ -804,19 +967,24 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 height: 300px;
                 position: absolute;
                 right: 1px;
-                @media (max-width: 543px) { 
-                    height: 70px;
-                    width: 120px;
+                @media (min-width: 320px) and (max-width: 374px){
+                    height: 90px;
+                    width: 140px;
+                }
+                @media (min-width: 375px) and (max-width: 413px) { 
+                    height: 90px;
+                    width: 140px;
+                }
+                @media (min-width: 414px) and (max-width: 543px) { 
+                    height: 90px;
+                    width: 140px;
                 }
                 @media (min-width: 544px) and (max-width: 767px){
                     height: 120px;
                     width: 170px;
                 }
-                @media (min-width: 768px) and (max-width: 1024px){
-                    width: 170px;
-                    height: 120px;
-                }
-                @media (min-width: 768px) and (max-width: 1024px){
+                
+                @media (min-width: 768px) and (max-width: 1023px){
                     width: 250px;
                     height: 160px;
                 }
@@ -828,64 +996,89 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             & h2{
                 width: 680px;
                 height: 80px;
-                font-size: 60px;
+                font-size: 45px;
                 font-weight: bold;
                 position: absolute;
                 color: $colorTextH2;
                 font-family: $fonts-h2;
-                @media (max-width: 543px) { 
+               
+                @media (min-width: 320px) and (max-width: 359px){
+                    width: 150px;
                     font-size: 15px;
+                    height: 20px;
+                }
+                @media (min-width: 360px) and (max-width: 374px){
+                    width: 180px;
+                    font-size: 15px;
+                    height: 20px;
+                    left: 7px;
+                }
+                @media (min-width: 375px) and (max-width: 410px) { 
+                    width: 180px;
+                    font-size: 15px;
+                    height: 20px;
+                    left: 25px;
+                }
+                @media (min-width: 411px) and (max-width: 413px){
+                    font-size: 15px;
+                    left: 60px;
                     top: -3px;
-                    width: 170px;
-                    text-align: center;
-                    height: 20px;
-                }   
-                @media (min-width: 375px) and (max-width: 542px){
-                    left: 55px;
-                }
-                @media (min-width: 411px) and (max-width: 542px){
-                   left: 93px;
-                }
-                @media (min-width: 544px) and (max-width: 730px){
-                    font-size: 24px;
-                    left: 120px;
-                    margin-top: -5px;
-                    width: 240px;
+                    width: 180px;
                     text-align: center;
                     height: 20px;
                 }
-                @media (min-width: 731px) and (max-width: 734px){
-                    font-size: 24px;
-                    left: 100px;
-                    margin-top: -5px;
-                    width: 240px;
+                @media (min-width: 414px) and (max-width: 567px) { 
+                    font-size: 15px;
+                    left: 65px;
+                    top: -3px;
+                    width: 180px;
+                    text-align: center;
+                    height: 20px;
+                }  
+                @media (min-width: 568px) and (max-width: 639px){
+                    font-size: 25px;
+                    left: 20px;
+                    top: -3px;
+                    width: 350px;
                     text-align: center;
                     height: 20px;
                 }
-                @media (min-width: 360px) and (max-width: 367px) { 
-                    left: 40px;
-                }
-                @media (min-width: 640px) and (max-width: 670px){
-                    left: 100px;
-                }
-                @media (min-width: 736px) and (max-width: 767px) {
-                    left: 100px;
-                    font-size: 24px;
-                    margin-top: -5px;
-                    width: 240px;
+                @media (min-width: 640px) and (max-width: 666px) { 
+                    font-size: 25px;
+                    left: -15px;
+                    top: -3px;
+                    width: 350px;
                     text-align: center;
                     height: 20px;
                 }
-                @media (min-width: 768px) and (max-width: 1024px){
-                    font-size: 28px;
+                @media (min-width: 667px) and (max-width: 735px) { 
+                    font-size: 25px;
+                    left: -10px;
+                    top: -3px;
+                    width: 350px;
+                    text-align: center;
+                    height: 20px;
+                }  
+                @media (min-width: 736px) and (max-width: 767px) { 
+                    font-size: 25px;
+                    left: -10px;
+                    width: 350px;
+                    text-align: center;
+                    height: 25px;
+                }
+                @media (min-width: 768px) and (max-width: 1023px) { 
+                    height: 25px;
                     width: 350px;
                     text-align: center;
                     left: 90px;
+                    font-size: 28px;
                 }
                 @media (min-width: 1024px) and (max-width: 1199px){
-                    font-size: 30px;
+                    width: 350px;
                     left: 280px;
+                    font-size: 30px;
                 }
+
             }
             & p{
                 color: $colorTextBlack;
@@ -895,49 +1088,72 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 height: 200px;
                 position: absolute;
                 left: 85px;
-                top: 95px;
+                top: 65px;
                 text-align: right;
-                @media (min-width: 375px) and (max-width: 410px){
-                    margin-left: 55px;
-                }
-                @media (min-width: 411px) and (max-width: 542px){
-                    margin-left: 93px;
-                }
-                @media (max-width: 543px) { 
+                @media (min-width: 320px) and (max-width: 359px){
                     font-size: 8px;
-                    width: 155px;
-                    left: 5px;
-                    top: 14px;
+                    width: 150px;
+                    left: -10px;
+                    top: 19px;
                     height: 60px;
                 }
-                @media (min-width: 544px) and (max-width: 730px){
+                @media (min-width: 360px) and (max-width: 374px){
+                    font-size: 8px;
+                    width: 160px;
+                    left: 20px;
+                    top: 19px;
+                    height: 60px;
+                }
+                @media (min-width: 375px) and (max-width: 410px){
+                    font-size: 8px;
+                    width: 160px;
+                    left: 35px;
+                    top: 19px;
+                    height: 60px;
+                }
+                @media (min-width: 411px) and (max-width: 413px){
+                    font-size: 8px;
+                    width: 160px;
+                    left: 70px;
+                    top: 19px;
+                    height: 60px;
+                }
+                @media (min-width: 414px) and (max-width: 567px) { 
+                    font-size: 8px;
+                    width: 160px;
+                    left: 75px;
+                    top: 19px;
+                    height: 60px;
+                }
+                @media (min-width: 568px) and (max-width: 639px){
                     font-size: 14px;
                     width: 300px;
-                    left: 53px;
-                    top: 20px;
+                    left: 55px;
+                    top: 23px;
                     height: 100px;
                 }
-                @media (min-width: 731px) and (max-width: 734px){
+                @media (min-width: 640px) and (max-width: 666px) { 
                     font-size: 14px;
                     width: 300px;
-                    left: 25px;
-                    top: 20px;
+                    left: 27px;
+                    top: 23px;
+                    height: 100px;
+                }
+                @media (min-width: 667px) and (max-width: 735px) { 
+                    font-size: 14px;
+                    width: 300px;
+                    left: 27px;
+                    top: 23px;
                     height: 100px;
                 }
                 @media (min-width: 736px) and (max-width: 767px){
                     font-size: 14px;
                     width: 300px;
                     left: 27px;
-                    top: 20px;
+                    top: 25px;
                     height: 100px;
                 }
-                @media (min-width: 360px) and (max-width: 367px) { 
-                    left: 45px;
-                }
-                @media (min-width: 640px) and (max-width: 670px){
-                  left: 27px;
-                }
-                @media (min-width: 768px) and (max-width: 1024px){
+                @media (min-width: 768px) and (max-width: 1023px){
                     font-size: 18px;
                     width: 350px;
                     left: 70px;
@@ -964,15 +1180,34 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     overflow: hidden;
     position: relative;
     z-index: 1;
-    @media (max-width: 543px) { 
+    @media (min-width: 320px) and (max-width: 374px){
+        width: 100%;  
+    }
+    @media (min-width: 375px) and (max-width: 541px){
+        padding-top: 80px;
+        width: 100%;
+    }
+    @media (min-width: 542px) and (max-width: 543px) { 
         width: 100%;
         height: 600px;
     }
-    @media (min-width: 544px) and (max-width: 767px){
+    @media (min-width: 544px) and (max-width: 567px){
         width: 100%;
         height: 620px;
     }
-    @media (min-width: 768px) and (max-width: 1024px){
+    @media (min-width: 568px) and (max-width: 666px){
+        width: 100%;
+        height: 800px;
+    }
+    @media (min-width: 667px) and (max-width: 735px) { 
+        width: 100%;
+        height: 800px;
+    }
+    @media (min-width: 736px) and (max-width: 767px) {
+        height: 900px;
+        width: 100%;
+    }
+    @media (min-width: 768px) and (max-width: 1023px){
         width: 100%;
         height: 750px;
         padding-top: 40px;
@@ -980,6 +1215,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     @media (min-width: 1024px) and (max-width: 1199px){
         width: 100%;
         height: 750px;
+        margin-top: 200px;
     }
     &__container{
         @media (max-width: 543px) {
@@ -1005,6 +1241,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 margin-left: auto;
                 margin-right: auto;
             }
+            
             @media (min-width: 768px) and (max-width: 1024px){
                 margin-left: auto;
                 margin-right: auto;
@@ -1012,7 +1249,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         }
         &-title{
             width: 700px;
-            font-size: 52px;
+            font-size: 45px;
             font-family: $fonts-h2;
             text-align: center;
             margin-left: auto;
@@ -1020,23 +1257,52 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             margin-top: 100px;
             color: $colorTextBlack;
             font-weight: bold;
-            @media (max-width: 543px) { 
+            @media (min-width: 320px) and (max-width: 374px){
                 width: 200px;
                 font-size: 24px;
-                margin-top: 20px;
+                margin-top: 170px;
             }
-            @media (min-width: 544px) and (max-width: 767px){
+            @media (min-width: 360px) and (max-width: 543px){
+                font-size: 30px;
+                width: 200px;
+                margin-top: 150px;
+            }
+            @media (min-width: 375px) and (max-width: 543px){
+                width: 200px;
+                font-size: 24px;
+                margin-top: 70px;
+            }
+            @media (min-width: 544px) and (max-width: 567px){
                 font-size: 30px;
                 width: 220px;
-            }
-            @media (min-width: 544px) and (max-width: 767px){
                 margin-top: 10px;
             }
-            @media (min-width: 768px) and (max-width: 1024px){
+            @media (min-width: 568px) and (max-width: 666px){
                 font-size: 40px;
-                width: 500px;
-                margin-top: 30px;
+                margin-top: 160px;
+                width: 100%;
             }
+            @media (min-width: 667px) and (max-width: 735px) { 
+                font-size: 40px;
+                margin-top: 180px;
+                width: 100%;
+            }
+            @media (min-width: 736px) and (max-width: 767px) {
+                font-size: 40px;
+                margin-top: 250px;
+                width: 100%;
+            }
+            @media (min-width: 768px) and (max-width: 1023px){
+                font-size: 40px;
+                width: 100%;
+                margin-top: 100px;
+            }
+            @media (min-width: 1024px) and (max-width: 1199px){
+                font-size: 40px;
+                width: 100%;
+                margin-top: 130px;
+            }
+
         }
         &-row{
             @media (max-width: 543px) {
@@ -1123,6 +1389,9 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                    color: $colorTextH2;
                    font-size: 35px;
                    font-family: $fonts-h2;
+                }
+                & button{
+                    outline: none;
                 }
             }
             & .modal-body{
