@@ -59,11 +59,11 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
     }
     @media (min-width: 568px) and (max-width: 639px){
         width: 100%;
-        height: 310px;
+        height: 100%;
     }
     @media (min-width: 640px) and (max-width: 730px) { 
         width: 100%;
-        height: 390px;
+        height: 100%;
     }
     @media (min-width: 731px) and (max-width: 767px) { 
         width: 100%;
@@ -116,8 +116,12 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         @media (min-width: 320px) and (max-width: 374px){
             left: 1px;
         }
-        @media (min-width: 375px) and (max-width: 639px) {
+        @media (min-width: 375px) and (max-width: 567px) {
             top: 5px;
+            left: 0px;
+        }
+        @media (min-width: 568px) and (max-width: 639px){
+            top: 0px;
             left: 0px;
         }
         @media (min-width: 640px) and (max-width: 666px) { 
@@ -442,23 +446,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             }
         }
         &-title{
-            @media (max-width: 320px) {
-                padding-left: 30px;
-                margin-right: 0px;
-            }
-           
-            @media (min-width: 414px) and (max-width: 543px){
-                width: 100%; 
-            }
-            @media (min-width: 544px) and (max-width: 767px){
-                margin-top: -170px;
-                padding-left: 50px;
-            }
-            @media (min-width: 812px) and (max-width: 999px){
-                width: 100%; 
-                left: 17px;
-                position: relative;
-            }
+            width: 100%;
             &-h1{
                 text-align: center;
                 font-size: 160px;
@@ -470,7 +458,7 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                 @media (min-width: 320px) and (max-width: 359px){
                     font-size: 60px;
                     margin-top: 170px;
-                    margin-left: 8vw;
+                    margin-left: 4vw;
                     width: 100%;
                 }
                 @media (min-width: 360px) and (max-width: 374px){
@@ -488,20 +476,24 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                     font-size: 50px;
                 }
                 @media (min-width: 568px) and (max-width: 639px){
-                    margin-top: 180px;
-                    font-size: 60px;
+                    margin-top: 10px;
+                    font-size: 50px;
+                    margin-left: 30px;
                 }
                 @media (min-width: 640px) and (max-width: 730px) { 
                     font-size: 65px;
-                    margin-top: 200px;
+                    margin-top: 20px;
+                    margin-left: 30px;
                 }
                 @media (min-width: 731px) and (max-width: 735px) { 
                     font-size: 75px;
-                    margin-top: 240px;
+                    margin-top: 40px;
+                    margin-left: 30px;
                 }
                 @media (min-width: 736px) and (max-width: 767px) {
                    font-size: 75px;
-                   margin-top: 240px;
+                   margin-top: 60px;
+                   margin-left: 30px;
                 }
                 @media (min-width: 768px) and (max-width: 811px){
                     font-size: 75px;
@@ -513,11 +505,12 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                     font-size: 60px;
                     margin-top: 65px;
                     width: 100%;
-                    
+                    margin-left: 30px;
                 }
                 @media (min-width: 1024px) and (max-width: 1199px){
                     font-size: 120px;
                     margin-top: 130px;
+                    margin-left: 20px;
                 }
             }
         }
@@ -594,13 +587,13 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             color: $colorTextH2;
             font-weight: bold;
             @media (min-width: 320px) and (max-width: 359px) {
-                width: 200px;
+                width: 100%;
                 font-size: 30px;
                 margin-top: 20px;
                 text-align: center;
             }
             @media (min-width: 360px) and (max-width: 543px){
-                width: 200px;
+                width: 100%;
                 font-size: 30px;
                 margin-top: 20px;
                 text-align: center;
@@ -623,10 +616,13 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
         background: white;
         overflow: auto;
         height: 670px;
+        @media (max-width: 320px) {
+            height: 300px;
+        }
         @media (min-width: 640px) and (max-width: 670px){
             height: 350px;
         }
-        @media  (max-width: 360px) {
+        @media  (min-width: 360px) and (max-width: 374px) {
             height: 300px;
         }
         @media (min-width: 375px) and (max-width: 543px){
@@ -659,8 +655,8 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                    height: 91px;
                 }
                 @media  (min-width: 360px) and (max-width: 374px) {
-                    width: 104.2px;
-                    height: 104.2px; 
+                    width: 104.59px;
+                    height: 104.59px; 
                 }
                 @media (min-width: 375px) and (max-width: 410px){
                     width: 109.5px;
@@ -671,8 +667,8 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
                     height: 121.3px;
                 }
                 @media (min-width: 414px) and (max-width: 567px){
-                    width: 122.3px;
-                    height: 122.3px;
+                    width: 122.8px;
+                    height: 122.8px;
                 }
                 @media (min-width: 568px) and (max-width: 639px){
                     width: 129.5px;
@@ -1258,23 +1254,23 @@ $colorBoxShadow: rgba(189, 191, 192, 0.4);
             color: $colorTextBlack;
             font-weight: bold;
             @media (min-width: 320px) and (max-width: 374px){
-                width: 200px;
+                width: 100%;
                 font-size: 24px;
                 margin-top: 170px;
             }
             @media (min-width: 360px) and (max-width: 543px){
                 font-size: 30px;
-                width: 200px;
+                width: 100%;
                 margin-top: 150px;
             }
             @media (min-width: 375px) and (max-width: 543px){
-                width: 200px;
+                width: 100%;
                 font-size: 24px;
                 margin-top: 70px;
             }
             @media (min-width: 544px) and (max-width: 567px){
                 font-size: 30px;
-                width: 220px;
+                width: 100%;
                 margin-top: 10px;
             }
             @media (min-width: 568px) and (max-width: 666px){
